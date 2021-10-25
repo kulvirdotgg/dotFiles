@@ -5,7 +5,7 @@
 * Current font: [Hack](https://github.com/source-foundry/Hack/releases/download/v3.003/Hack-v3.003-ttf.zip)
 * [Anonymous Pro](https://www.marksimonson.com/fonts/view/anonymous-pro)
 * [Source Code pro](https://github.com/Falkor/dotfiles/blob/master/fonts/SourceCodePro+Powerline+Awesome+Regular.ttf?raw=true)
-* [Montserrat](https://fonts.google.com/specimen/Montserrat)https://fonts.google.com/specimen/Montserrat
+* [Montserrat](https://fonts.google.com/specimen/Montserrat)
 
 # Extensions
 
