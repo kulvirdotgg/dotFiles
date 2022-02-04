@@ -11,7 +11,7 @@ bldgrn='\e[1;32m' # Bold Green
 bldpur='\e[1;35m' # Bold Purple
 txtrst='\e[0m'    # Text Reset
 
-emojis=("🌐" "🎲" "🌍" "🌵")
+emojis=("🌐" "🎲" "🌵")
 
 EMOJI=${emojis[$RANDOM % ${#emojis[@]} ]}
 
@@ -27,6 +27,8 @@ PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 PS1="$EMOJI > "
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
+fortune | cowsay -f tux "ara ara kulvir kun"
+
 # ----------------------
 # Git Aliases
 # ----------------------
@@ -34,6 +36,6 @@ alias ga='git add'
 alias gaa='git add -A'
 alias gcm='git commit -m'
 alias gd='git diff'
-alias gp='git pull'
-alias gpsh='git push'
+alias gpl='git pull'
+alias gp='git push'
 alias gs='git status'
