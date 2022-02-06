@@ -1,3 +1,5 @@
+#export PATH=/opt/homebrew/opt/python@3.9/libexec/bin:$PATH:$HOME/bin
+
 HOST_NAME=MB
 
 export PATH=$PATH:$HOME/bin
@@ -27,7 +29,7 @@ PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 PS1="$EMOJI > "
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-fortune | cowsay -f tux "ara ara kulvir kun"
+#fortune | cowsay -f tux "ara ara kulvir kun"
 
 # ----------------------
 # Git Aliases
