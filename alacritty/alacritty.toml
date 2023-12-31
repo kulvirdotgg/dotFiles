@@ -30,6 +30,7 @@ history = 1000
 
 [window]
 decorations = "none"
+opacity = 0.95
 
 [window.dimensions]
 columns = 108
