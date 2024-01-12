@@ -4,7 +4,7 @@ return {
 		build = ":TSUpdate",
         config = function()
             require("nvim-treesitter.configs").setup ({
-                ensure_installed = { "cpp", "typescript", "c", "python" },
+                ensure_installed = { "cpp", "typescript", "tsx", "c", "python" },
 
                 sync_install = false,
 
@@ -12,8 +12,11 @@ return {
 
                 highlight = {
                     enable = true,
-
                     additional_vim_regex_highlighting = false,
+                },
+
+                indent = {
+                    enable = true,
                 },
             })
         end

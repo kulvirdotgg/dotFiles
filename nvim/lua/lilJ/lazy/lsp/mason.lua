@@ -69,6 +69,17 @@ return {
                         },
                     })
                 end,
+
+                ["tsserver"] = function()
+                    local lspconfig = require("lspconfig")
+
+                    lspconfig.tsserver.setup({
+                        capabilities = capabilities,
+                        on_attach = function(client)
+                            client.resolved_capabilities.document_formatting = true
+                        end,
+                    })
+                end,
             },
         })
 

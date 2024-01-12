@@ -1,7 +1,7 @@
 vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>n", vim.cmd.Ex)
 
--- Prime said this is greated remap ever
+-- Prime said this is greatest remap ever
 vim.keymap.set("x", "<leader>p", [["_dP]])
 
 -- some next greatest remaps
@@ -42,15 +42,19 @@ vim.api.nvim_create_autocmd("LspAttach", {
 
         local keymap = vim.keymap
 
+        keymap.set("n", "K", vim.lsp.buf.hover, opts)
+
         keymap.set("n", "gd", function() vim.lsp.buf.definition() end, opts)
+
+        keymap.set("n", "gD", function() vim.lsp.buf.declaration() end, opts)
+
+        keymap.set("n", "gi", function() vim.lsp.buf.implementation() end, opts)
 
         keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, opts)
 
         keymap.set("n", "<leader>rn", vim.lsp.buf.rename, opts)
 
         keymap.set("n", "<leader>vd", function() vim.diagnostic.open_float() end, opts)
-
-        keymap.set("n", "K", vim.lsp.buf.hover, opts)
 
         keymap.set("n", "<leader>rr", function() vim.lsp.buf.references() end, opts)
 
