@@ -1,9 +1,31 @@
-return{
+return {
 
     "nvim-lua/plenary.nvim", 
 
     "github/copilot.vim",
 
+    "nvim-tree/nvim-web-devicons",
+
+    {
+        "RRethy/vim-illuminate",
+        config = function()
+            require("illuminate")
+        end,
+    },
+
+    {
+        "FabijanZulj/blame.nvim",
+        config = function()
+            require("blame").setup{}
+        end
+    },
+
+    {
+        "iamcco/markdown-preview.nvim",
+        cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+        ft = { "markdown" },
+        build = function() vim.fn["mkdp#util#install"]() end,
+    },
 
     {
         "lewis6991/gitsigns.nvim",
@@ -12,10 +34,10 @@ return{
         end
     },
 
-	{
-		"numToStr/Comment.nvim",
-		config = function()
-			require('Comment').setup({
+    {
+        "numToStr/Comment.nvim",
+        config = function()
+            require('Comment').setup({
                 toggler = {
                     line = "gcc",
                     block = "gbc",
@@ -25,10 +47,9 @@ return{
                     block = "gb",
                 },
             })
-		end
-	},
+        end
+    },
 
-    "nvim-tree/nvim-web-devicons",
 
     {
         "NvChad/nvim-colorizer.lua",

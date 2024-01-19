@@ -86,9 +86,11 @@ return {
         mason_tool_installer.setup({
             ensure_installed = {
                 "prettier",
+                "prettierd",
                 "stylua",
-                -- "pylint",
+                "pylint",
                 "eslint_d",
+                "htmlbeautifier",
             },
         })
     end,
