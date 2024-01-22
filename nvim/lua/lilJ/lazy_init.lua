@@ -16,6 +16,7 @@ require("lazy").setup({
     { import = "lilJ.lazy.lsp" }
 }, {
     change_detection = {
+        enabled = true,
         notify = false,
     },
 })

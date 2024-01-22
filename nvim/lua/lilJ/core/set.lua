@@ -8,6 +8,7 @@ vim.api.nvim_create_autocmd(
     "FileType",
     { pattern = "*", command = [[setlocal formatoptions-=c formatoptions-=r formatoptions-=o]] }
 )
+vim.opt.wildignore = "*/.git/*,*/.DS_Store/*,*/target/*,*/node_modules/*" 
 
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4

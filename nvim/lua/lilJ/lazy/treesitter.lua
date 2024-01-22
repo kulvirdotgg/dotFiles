@@ -1,10 +1,16 @@
 return {
 	{
 		"nvim-treesitter/nvim-treesitter",
+
 		build = ":TSUpdate",
+
+        dependencies = {
+            "nvim-treesitter/nvim-treesitter-textobjects",
+        },
+        
         config = function()
             require("nvim-treesitter.configs").setup ({
-                ensure_installed = { "cpp", "typescript", "tsx", "c", "python",  "go", "html" },
+                ensure_installed = { "typescript", "tsx", "python",  "go", "c", "cpp", "lua", "markdown" },
 
                 sync_install = false,
 
