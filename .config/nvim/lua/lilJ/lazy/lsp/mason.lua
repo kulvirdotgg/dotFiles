@@ -93,8 +93,9 @@ return {
                             [server_name] = {
                                 analyses = {
                                     unusedparams = true,
+                                    shadow = true,
                                 },
-                                usePlaceholders = true,
+                                staticcheck = true,
                             },
                         },
                     }
@@ -107,6 +108,21 @@ return {
                             Lua = {
                                 diagnostics = { globals = {"vim"} },
                             },
+                        },
+                    })
+                end,
+
+                ["gopls"] = function()
+                    lspconfig.gopls.setup({
+                        capabilities = capabilities,
+                        on_attach = on_attach,
+                        settings = {
+                            gopls = {
+                                gofumpt = true,
+                            },
+                        },
+                        flags = {
+                            debounce_text_changes = 150,
                         },
                     })
                 end,

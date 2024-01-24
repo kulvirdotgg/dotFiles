@@ -22,7 +22,7 @@ return {
 
         vim.keymap.set('n', '<leader>f', builtin.find_files, {})
         vim.keymap.set('n', '<c-p>', builtin.git_files, {})
-        -- vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
+        vim.keymap.set('n', '<C-f>', builtin.live_grep, {})
         -- vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
     end
 }
