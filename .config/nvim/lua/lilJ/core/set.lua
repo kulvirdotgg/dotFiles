@@ -32,3 +32,12 @@ vim.cmd.termguicolors = true
 vim.g.netrw_banner = 0
 vim.g.netrw_browse_split = 0
 vim.g.netrw_winsize = 25
+
+vim.o.wrapmargin = 0
+vim.o.textwidth = 0
+
+vim.o.wrap = true
+vim.o.linebreak = true
+vim.o.breakindent = true
+vim.o.showbreak = "↳ "
+vim.opt_local.columns = 144
