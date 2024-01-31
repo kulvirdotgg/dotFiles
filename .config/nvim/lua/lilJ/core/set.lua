@@ -40,4 +40,4 @@ vim.o.wrap = true
 vim.o.linebreak = true
 vim.o.breakindent = true
 vim.o.showbreak = "↳ "
-vim.opt_local.columns = 144
+-- vim.opt_local.columns = 144

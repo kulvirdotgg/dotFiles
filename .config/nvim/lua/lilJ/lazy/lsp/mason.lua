@@ -77,28 +77,6 @@ return {
             group = format_go,
         })
 
-        local format_auto = vim.api.nvim_create_augroup("FormatAutocmd", {})
-        vim.api.nvim_buf_create_user_command(0, 'Format', function(_)
-            if vim.lsp.buf.format then
-                vim.lsp.buf.format()
-            elseif vim.lsp.buf.formatting then
-                vim.lsp.buf.formatting()
-            end
-        end, {})
-
-        -- NOTE: This is useful for auto-formatting on save, but I don't like it so Imma use Format command insetead
-        --[[ vim.api.nvim_create_autocmd("BufWritePre", {
-            pattern = "*",
-            callback = function(_)
-                if vim.lsp.buf.format then
-                    vim.lsp.buf.format()
-                elseif vim.lsp.buf.formatting then
-                    vim.lsp.buf.formatting()
-                end
-            end,
-            group = format_auto,
-        }) ]]
-
         local capabilities = vim.lsp.protocol.make_client_capabilities()
         capabilities = cmp_lsp.default_capabilities(capabilities)
 
@@ -108,7 +86,7 @@ return {
                 "cssls",
                 "gopls",
                 "html",
-                "prismals",
+                "java_language_server",
                 "pyright",
                 "tailwindcss",
                 "tsserver",
