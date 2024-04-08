@@ -1,0 +1,23 @@
+{
+	"features": {
+		"copilot": false
+	},
+	"telemetry": {
+		"diagnostics": false,
+		"metrics": false
+	},
+	"theme": "Rosé Pine",
+	"vim_mode": true,
+	"ui_font_size": 14,
+	"buffer_font_size": 14,
+	"tab_size": 4,
+	"buffer_font_family": "MesloLGS NF",
+	"confirm_quit": true,
+	"format_on_save": "language_server",
+	"show_whitespaces": "all",
+	"preferred_line_length": 80,
+	"relative_line_numbers": true,
+	"scrollbar": {
+		"show": "never"
+	}
+}

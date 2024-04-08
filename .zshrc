@@ -74,7 +74,6 @@ plugins=(
 	git
 	zsh-syntax-highlighting
 	zsh-autosuggestions	
-    	you-should-use
 	)
 
 source $ZSH/oh-my-zsh.sh
@@ -116,27 +115,22 @@ alias python='python3'
 alias ls='colorls'
 alias nv='nvim'
 
+# Go hot reload package
+alias air="~/go/bin/air"
+
 # homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # cool to use tools (if ever wanted to)
+# alias neofetch="macchina"
 # neofetch
-# macchina
-
-# bun completions
-[ -s "/Users/kulvir/.bun/_bun" ] && source "/Users/kulvir/.bun/_bun"
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
-# pnpm
-export PNPM_HOME="/Users/kulvir/Library/pnpm"
-case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
-esac
-# pnpm end
+# bun completions
+[ -s "/Users/kulvir/.bun/_bun" ] && source "/Users/kulvir/.bun/_bun"
 
-# spaceship
+# spaceship for zsh prompts
 source /opt/homebrew/opt/spaceship/spaceship.zsh

@@ -1,15 +1,15 @@
-# This is to make my reinstalls easier
+# Fow weekly hard resets
 
 ## Install all the applications using Homebrew.
 
 ```bash
-sudo brew install --cask aerial alacritty alfred cloudflare-warp discord duckduckgo firefox google-chrome iterm2 keka kitty linearmouse microsoft-edge notion numi postman raycast shottr slack spotify stats telegram ticktick visual-studio-code vlc zoom
+sudo brew install aerial alacritty cloudflare-warp discord duckduckgo firefox google-chrome keka kitty linearmouse microsoft-edge obsidian postman raycast spotify stats telegram visual-studio-code  zoom
 ```
 
 ## Install all the Formulae with Homebrew
 
 ```bash
-brew install docker git macchina neofetch neovim python3 spaceship tmux colorls 
+brew install docker git go macchina neofetch neovim node python3@latest spaceship tmux colorls
 ```
 
 ## Some of the applications to install from appstore
@@ -18,15 +18,13 @@ brew install docker git macchina neofetch neovim python3 spaceship tmux colorls
 - Microsoft Powepoint
 - 
 
-## Accessing my own github
+## I always forget to set it up first
 
 1. Go to [Github](https://github.com/settings/tokens) and generate PAT.
 
-2. Run the command `git config --global credential.helper cache`. It will store the next entered credentials.
+2. `git config --global credential.helper cache`
 
-3. Clone any of my repo, It will ask for username and password.
-
-4. Enter github username and PAT in place of password and now I am good to go.
+3. Enter github username and PAT.
 
 ## misc stuff
 
@@ -37,7 +35,6 @@ brew install docker git macchina neofetch neovim python3 spaceship tmux colorls
 
 - [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
 - [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
-- [zsh-you-should-use](https://github.com/MichaelAquilina/zsh-you-should-use)
 
 </details>
 
@@ -45,7 +42,5 @@ brew install docker git macchina neofetch neovim python3 spaceship tmux colorls
 <summary>Package Managers</summary>
 
 - [bun](https://bun.sh/docs/installation)
-- [yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable)
-- [pnpm](https://pnpm.io/installation)
 
 </details>
