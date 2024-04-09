@@ -1,5 +1,6 @@
 *.DS_Store
 */.config/tmux/plugins/tmux*
+*.gitconfig*
 *.trash
 *.bun/*
 *.cache*
@@ -10,7 +11,7 @@
 *.zcompdump-Kulvir*
 *.zcompdump-Kulvir*
 *.zsh_*
-*Application/*
+*Application*
 *Desktop/*
 *Downloads/*
 *Documents*
@@ -20,3 +21,8 @@
 *Pictures/*
 *Public/*
 *Go/*
+*.lesshst*
+*.config/zed/.tmp*
+*/.config/zed/themes/*
+*/.config/raycast/extensions*
+*/.config/zed/conversations/*
