@@ -404,7 +404,7 @@ require("lazy").setup({
 				}
 			end,
 			formatters_by_ft = {
-				go = { "gopls" },
+				go = { "gopls", "goimports-reviser", "gofumpt" },
 				lua = { "stylua" },
 				json = { "biome" },
 				python = { "isort", "black" },
@@ -596,7 +596,7 @@ require("lazy").setup({
 		end,
 	},
 
-	{
+	--[[ {
 		"akinsho/bufferline.nvim",
 		version = "*",
 
@@ -610,7 +610,7 @@ require("lazy").setup({
 				},
 			})
 		end,
-	},
+	}, ]]
 
 	-- NOTE: uncomment debug to enable debugging in neoVim
 	-- require("lilJ.plugins.debug"),
