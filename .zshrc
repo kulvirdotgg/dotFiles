@@ -72,8 +72,8 @@ ZSH_THEME="robbyrussell"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
 	git
-	zsh-syntax-highlighting
 	zsh-autosuggestions	
+	zsh-syntax-highlighting
 	)
 
 source $ZSH/oh-my-zsh.sh
@@ -112,7 +112,7 @@ alias gs='git status'
 
 alias python='python3'
 
-alias ls='colorls'
+# alias ls='colorls'
 alias nv='nvim'
 
 # Go hot reload package
@@ -122,7 +122,7 @@ alias air="~/go/bin/air"
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # cool to use tools (if ever wanted to)
-# alias neofetch="macchina"
+alias neofetch="macchina"
 # neofetch
 
 # bun
