@@ -6,10 +6,9 @@
 *.cache*
 *.local*
 *.npm*
-*.oh-my-zsh*
 *.vscode*
 *.zcompdump-Kulvir*
-*.zcompdump-Kulvir*
+*.zcompdump*
 *.zsh_*
 *Application*
 *Desktop/*

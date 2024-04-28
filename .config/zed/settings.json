@@ -1,5 +1,6 @@
 {
-	"features": {
+	"base_keymap": "VSCode",
+ "features": {
 		"copilot": false
 	},
 	"telemetry": {
