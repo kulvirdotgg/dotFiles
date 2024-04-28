@@ -34,7 +34,7 @@ disabled = true
 truncation_length = 2
 
 [git_branch]
-format='[ $symbol$branch(: $remote_branch )]($style)'
+format='[ $symbol$branch (: $remote_branch )]($style)'
 style='bold purple'
 symbol=" "
 always_show_remote = true
