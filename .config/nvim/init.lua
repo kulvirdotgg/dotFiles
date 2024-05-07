@@ -99,7 +99,7 @@ vim.opt.updatetime = 250
 
 -- Sets how neovim will display certain whitespace characters in the editor.
 -- vim.opt.list = true
--- vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
+-- vim.opt.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
 
 -- Preview substitutions live, as you type!
 vim.opt.inccommand = "split"
@@ -352,7 +352,11 @@ require("lazy").setup({
 
 			-- Enable the following language servers
 			local servers = {
-				gopls = {},
+				clangd = {},
+				gopls = {
+					filetypes = { "go", "gomod", "gowork", "gotmpl" },
+				},
+
 				pyright = {},
 				tsserver = {},
 
@@ -376,6 +380,13 @@ require("lazy").setup({
 
 			local ensure_installed = vim.tbl_keys(servers or {})
 			vim.list_extend(ensure_installed, {
+				"clangd",
+				"clang-format",
+				"gofumpt",
+				"goimports-reviser",
+				"gopls",
+				"mypy",
+				"ruff",
 				"stylua",
 			})
 			require("mason-tool-installer").setup({ ensure_installed = ensure_installed })
@@ -397,21 +408,16 @@ require("lazy").setup({
 		opts = {
 			notify_on_error = false,
 			format_on_save = function(bufnr)
-				local disable_filetypes = { c = true, cpp = true }
+				local disable_filetypes = {}
 				return {
 					timeout_ms = 500,
 					lsp_fallback = not disable_filetypes[vim.bo[bufnr].filetype],
 				}
 			end,
 			formatters_by_ft = {
-				go = { "gopls", "goimports-reviser", "gofumpt" },
+				c = { "clang-format" },
+				go = { "gofumpt", "goimports_reviser" },
 				lua = { "stylua" },
-				json = { "biome" },
-				python = { "isort", "black" },
-				javascript = { { "biome", "prettierd", "prettier" } },
-				javascriptreact = { { "biome", "prettierd", "prettier" } },
-				typescript = { { "biome", "prettierd", "prettier" } },
-				typescriptreact = { { "biome", "prettierd", "prettier" } },
 			},
 		},
 	},
@@ -560,7 +566,7 @@ require("lazy").setup({
 			"nvim-treesitter/nvim-treesitter-textobjects",
 		},
 		opts = {
-			ensure_installed = { "c", "go", "html", "lua", "markdown", "typescript", "tsx" },
+			ensure_installed = { "c", "go", "html", "lua", "python" },
 			auto_install = true,
 			highlight = {
 				enable = true,
