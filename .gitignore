@@ -21,7 +21,5 @@
 *Public/*
 *Go/*
 *.lesshst*
-*.config/zed/.tmp*
-*/.config/zed/themes/*
-*/.config/raycast/extensions*
-*/.config/zed/conversations/*
+*.config/zed/*
+*.config/zed/*/*
