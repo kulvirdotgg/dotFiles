@@ -3,11 +3,11 @@
 ## brew installs
 
 ```bash
-brew install aerial alacritty cloudflare-warp discord duckduckgo firefox google-chrome keka kitty linearmouse microsoft-edge obsidian postman raycast spotify stats telegram
+brew install --cask aerial alacritty cloudflare-warp discord duckduckgo firefox google-chrome httpie keka kitty linearmouse microsoft-edge obsidian raycast spotify stats telegram
 ```
 
 ```bash
-brew install docker git go macchina neofetch neovim python3 ripgrep starship tmux zsh-syntax-highlighting
+brew install docker git go macchina neovim python3 ripgrep starship tmux zsh-syntax-highlighting
 ```
 
 ## sed nah brew installs
