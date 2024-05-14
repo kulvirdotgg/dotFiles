@@ -1,3 +1,5 @@
+export ZDOTDIR=~/.config/zsh
+
 ### ---- Syntax Highlighting ----
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
