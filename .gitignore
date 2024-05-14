@@ -1,4 +1,5 @@
 *.DS_Store**
 *tmux/**
+!tmux/tmux.conf
 *zsh/.zsh_history
 *zed/**
