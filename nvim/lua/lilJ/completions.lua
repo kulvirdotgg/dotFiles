@@ -4,17 +4,36 @@ luasnip.config.setup {
     updateevents = "TextChanged,TextChangedI",
 }
 
+require("luasnip.loaders.from_vscode").lazy_load()
+
 local lspkind = require "lspkind"
 lspkind.init {}
 
 local cmp = require "cmp"
 cmp.setup {
+    window = {
+        documentation = {
+            border = "rounded",
+        },
+        completion = {
+            border = "rounded",
+        },
+    },
     sources = {
         { name = "nvim_lsp" },
         { name = "path" },
         { name = "buffer" },
     },
-    completion = { completeopt = "menu, menuone, noinsert, noselect" },
+    completion = {
+        completeopt = "menu, menuone, noinsert, noselect",
+    },
+    formatting = {
+        fields = { "kind", "abbr", "menu" },
+        expandable_indicator = true,
+        format = lspkind.cmp_format {
+            mode = "symbol",
+        },
+    },
 
     -- No, but seriously. Please read `:help ins-completion`, it is really good!
     mapping = cmp.mapping.preset.insert {

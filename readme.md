@@ -3,18 +3,18 @@
 ## brew installs
 
 ```bash
-brew install --cask aerial alacritty cloudflare-warp discord duckduckgo firefox google-chrome httpie keka kitty linearmouse microsoft-edge obsidian raycast spotify stats telegram
+brew install --cask aerial alacritty cloudflare-warp discord duckduckgo firefox font-anonymous-pro font-hack-nerd-font font-meslo-lg-nerd-font google-chrome httpie keka kitty linearmouse microsoft-edge obsidian raycast spotify stats telegram
 ```
 
 ```bash
-brew install docker git go macchina neovim python3 ripgrep starship tmux zsh-syntax-highlighting
+brew install awscli docker fastfetch git go neovim node python3 ripgrep starship tmux zsh-syntax-highlighting
 ```
 
 ## sed nah brew installs
 
-- [Zed](https://zed.dev/)
 - Spark
 - [amie](amie.so)
+- [Zed](https://zed.dev/)
 - steam
 - premiere pro (always a nightmare)
 

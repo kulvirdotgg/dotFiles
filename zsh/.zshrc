@@ -13,7 +13,7 @@ alias gs='git status'
 
 alias python='python3'
 
-# alias ls='colorls'
+alias ls='ls --color'
 alias nv='nvim'
 
 # ---- Air GO hot reload ----
@@ -23,8 +23,7 @@ alias air="~/go/bin/air"
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # cool to use tools (if ever wanted to)
-alias neofetch="macchina"
-# neofetch
+alias neofetch="fastfetch"
 
 # ---- bun ----
 export BUN_INSTALL="$HOME/.bun"

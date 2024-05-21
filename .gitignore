@@ -2,4 +2,5 @@
 *tmux/**
 !tmux/tmux.conf
 *zsh/.zsh_history
+*zsh/.zsh_sessions/
 *zed/**
