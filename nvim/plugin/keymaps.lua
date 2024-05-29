@@ -35,8 +35,12 @@ set("n", "<Esc>", "<cmd>nohlsearch<CR>")
 -- Diagnostic keymaps
 set("n", "[d", vim.diagnostic.goto_prev, { desc = "Go to previous [D]iagnostic message" })
 set("n", "]d", vim.diagnostic.goto_next, { desc = "Go to next [D]iagnostic message" })
-set("n", "<leader>e", vim.diagnostic.open_float, { desc = "Show diagnostic [E]rror messages" })
-set("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Open diagnostic [Q]uickfix list" })
+-- set("n", "<leader>dq", vim.diagnostic.setloclist, { desc = "Open diagnostic [Q]uickfix list" })
+-- set("n", "<leader>de", vim.diagnostic.open_float, { desc = "Show diagnostic [E]rror messages" })
+
+vim.keymap.set("n", "<leader>q", "<Cmd>bprevious<CR>", { desc = "Go to previous buffer" })
+vim.keymap.set("n", "<leader>e", "<Cmd>bnext<CR>", { desc = "Go to next buffer" })
+vim.keymap.set("n", "<leader>w", "<Cmd>bdelete<CR>", { desc = "Delete buffer" })
 
 -- Disable arrow keys in normal mode
 set("n", "<left>", '<cmd>echo "Use h to move!!"<CR>')
@@ -47,8 +51,18 @@ set("n", "<down>", '<cmd>echo "Use j to move!!"<CR>')
 -- Highlight when yanking (copying) text
 vim.api.nvim_create_autocmd("TextYankPost", {
     desc = "Highlight when yanking (copying) text",
-    group = vim.api.nvim_create_augroup("kickstart-highlight-yank", { clear = true }),
+    group = vim.api.nvim_create_augroup("highlight-yank", { clear = true }),
     callback = function()
         vim.highlight.on_yank()
+    end,
+})
+
+vim.api.nvim_create_autocmd("ColorScheme", {
+    desc = "Brighter separator for floating windows",
+    group = vim.api.nvim_create_augroup("separator", { clear = true }),
+    callback = function()
+        vim.api.nvim_set_hl(0, "WinSeparator", { bg = "NONE", fg = "#aaaaaa" })
+        vim.api.nvim_set_hl(0, "FloatBorder", { bg = "NONE", fg = "#aaaaaa" })
+        vim.api.nvim_set_hl(0, "FloatBorder", { bg = "NONE", fg = "#aaaaaa" })
     end,
 })
