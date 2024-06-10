@@ -1,22 +1,17 @@
 # Every week
 
-## brew installs
-
 ```bash
-brew install --cask aerial alacritty cloudflare-warp discord duckduckgo firefox font-anonymous-pro font-hack-nerd-font font-meslo-lg-nerd-font google-chrome httpie keka kitty linearmouse microsoft-edge obsidian raycast spotify stats telegram
+brew install --cask aerial alacritty cloudflare-warp discord font-anonymous-pro font-hack-nerd-font font-meslo-lg-nerd-font google-chrome httpie keka kitty linearmouse obsidian raycast spotify stats telegram
 ```
 
 ```bash
 brew install awscli docker fastfetch git go neovim node python3 ripgrep starship tmux zsh-syntax-highlighting
 ```
 
-## sed nah brew installs
+## nah brew installs
 
-- Spark
 - [amie](amie.so)
-- [Zed](https://zed.dev/)
 - steam
-- premiere pro (always a nightmare)
 
 ## I always forget to set it up first
 
