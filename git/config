@@ -4,4 +4,4 @@
 	name = Kulvir Singh
 	email = kulvirs734@gmail.com
 [init]
-	defaultbranch = trunk
+	defaultBranch = trunk

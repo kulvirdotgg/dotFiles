@@ -25,6 +25,9 @@ return {
             gopls = {
                 filetypes = { "go", "gomod", "gowork", "gotmpl" },
             },
+            html = {
+                filetypes = { "html", "tmpl" },
+            },
             jsonls = {
                 settings = {
                     json = {

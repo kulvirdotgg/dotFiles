@@ -1,5 +1,3 @@
-export ZDOTDIR=~/.config/zsh
-
 ### ---- Syntax Highlighting ----
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
@@ -28,7 +26,6 @@ alias neofetch="fastfetch"
 # ---- bun ----
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
-
 # bun completions
 [ -s "/Users/kulvir/.bun/_bun" ] && source "/Users/kulvir/.bun/_bun"
 
