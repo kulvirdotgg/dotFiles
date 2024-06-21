@@ -33,3 +33,4 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 [ -s "/Users/kulvir/.bun/_bun" ] && source "/Users/kulvir/.bun/_bun"
 
 eval "$(starship init zsh)"
+export PATH="/opt/homebrew/opt/node@20/bin:$PATH"

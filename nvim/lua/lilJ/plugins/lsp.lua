@@ -49,6 +49,9 @@ return {
             },
             pyright = {},
             tsserver = {},
+            tailwindcss = {
+                filetypes = { "html", "css", "typescript", "typescriptreact" },
+            },
         }
 
         require("mason").setup()
@@ -62,7 +65,6 @@ return {
             "prettier",
             "ruff",
             "stylua",
-            "tailwindcss-language-server",
         })
         require("mason-tool-installer").setup { ensure_installed = ensure_installed }
 
