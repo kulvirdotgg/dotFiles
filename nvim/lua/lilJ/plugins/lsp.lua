@@ -28,14 +28,14 @@ return {
             html = {
                 filetypes = { "html", "tmpl" },
             },
-            jsonls = {
-                settings = {
-                    json = {
-                        schemas = require("schemastore").json.schemas(),
-                        validate = { enable = true },
-                    },
-                },
-            },
+            -- jsonls = {
+            --     settings = {
+            --         json = {
+            --             schemas = require("schemastore").json.schemas(),
+            --             validate = { enable = true },
+            --         },
+            --     },
+            -- },
             lua_ls = {
                 -- cmd = {...},
                 -- filetypes = { ...},
@@ -50,7 +50,7 @@ return {
                     },
                 },
             },
-            pyright = {},
+            -- pyright = {},
             tsserver = {},
             tailwindcss = {
                 filetypes = { "html", "css", "typescript", "typescriptreact" },
@@ -64,9 +64,9 @@ return {
             "clang-format",
             "gofumpt",
             "goimports-reviser",
-            "mypy",
+            -- "mypy",
             "prettier",
-            "ruff",
+            -- "ruff",
             "stylua",
         })
         require("mason-tool-installer").setup { ensure_installed = ensure_installed }

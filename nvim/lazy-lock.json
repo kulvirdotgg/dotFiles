@@ -20,6 +20,7 @@
   "mason.nvim": { "branch": "main", "commit": "49ff59aded1047a773670651cfa40e76e63c6377" },
   "mini.nvim": { "branch": "main", "commit": "eb2dd6d187e1ab5fefec66f0d37b1a3dc8633d17" },
   "neodev.nvim": { "branch": "main", "commit": "ce9a2e8eaba5649b553529c5498acb43a6c317cd" },
+  "noice.nvim": { "branch": "main", "commit": "cade1f972ba226e7753a7a113f3f1a942908e73c" },
   "nvim-cmp": { "branch": "main", "commit": "5260e5e8ecadaf13e6b82cf867a909f54e15fd07" },
   "nvim-dap": { "branch": "master", "commit": "5a2f7121869394502521c52b2bc581ab22c69447" },
   "nvim-dap-go": { "branch": "main", "commit": "5faf165f5062187320eaf9d177c3c1f647adc22e" },
