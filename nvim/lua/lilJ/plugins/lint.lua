@@ -7,6 +7,10 @@ return {
 
             lint.linters_by_ft = {
                 python = { "ruff", "mypy" },
+                dockerfile = { "hadolint" },
+                json = { "jsonlint" },
+                markdown = { "vale" },
+                text = { "vale" },
             }
 
             -- To allow other plugins to add linters to require('lint').linters_by_ft,

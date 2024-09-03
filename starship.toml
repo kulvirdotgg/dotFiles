@@ -37,6 +37,8 @@ truncate_to_repo = true
 truncation_symbol = " "
 style = "bold blue"
 
+[docker_context]
+format = 'in [$symbol$context]($style) '
 
 [git_branch]
 format='[ $symbol$branch :\($remote_branch\) ]($style)'
@@ -69,7 +71,7 @@ version_format = '${major}.${minor}'
 disabled = true
 
 [package]
-disabled = false
+disabled = true
 
 [palettes.catppuccin_mocha]
 rosewater = "#f5e0dc"

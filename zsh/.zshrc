@@ -14,14 +14,14 @@ alias python='python3'
 alias ls='ls --color'
 alias nv='nvim'
 
-# ---- Air GO hot reload ----
-alias air="~/go/bin/air"
+# cool to use tools (if ever wanted to)
+alias neofetch="fastfetch"
 
 # ---- homebrew ----
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-# cool to use tools (if ever wanted to)
-alias neofetch="fastfetch"
+# ---- Air GO hot reload ----
+alias air="~/go/bin/air"
 
 # ---- bun ----
 export BUN_INSTALL="$HOME/.bun"
@@ -31,3 +31,5 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 eval "$(starship init zsh)"
 export PATH="/opt/homebrew/opt/node@20/bin:$PATH"
+
+source <(fzf --zsh)
