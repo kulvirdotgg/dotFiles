@@ -51,7 +51,7 @@ return {
                 },
             },
             pyright = {},
-            tsserver = {},
+            ts_ls = {},
             tailwindcss = {
                 filetypes = { "html", "css", "typescript", "typescriptreact" },
             },
