@@ -4,6 +4,7 @@ local config = {
 	enable_tab_bar = false,
 	window_decorations = "RESIZE",
 	window_close_confirmation = "NeverPrompt",
+	font = wezterm.font("MesloLGS Nerd Font Mono"),
 	font_size = 14.0,
 	-- color_scheme = "Catppuccin Mocha",
 	color_scheme = "Carbon Fox",
