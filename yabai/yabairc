@@ -5,7 +5,7 @@ sudo yabai --load-sa
 
 # global settings
 yabai -m config                                 \
-    external_bar                 off:30:0       \
+    external_bar                 all:30:0       \
     menubar_opacity              1.0            \
     mouse_follows_focus          off            \
     focus_follows_mouse          off            \
@@ -45,12 +45,12 @@ yabai -m rule --add app="^System Settings$" manage=off
 yabai -m rule --add app="^Calculator$" manage=off
 yabai -m rule --add app="^Finder$" manage=off
 yabai -m rule --add app="^Spotify$" manage=off
-yabai -m rule --add app="^Safari$" manage=off
+# yabai -m rule --add app="^Safari$" manage=off
 yabai -m rule --add app="^App Store$" manage=off
 yabai -m rule --add app="^Activity Monitor$" manage=off
 yabai -m rule --add label="Software Update" title="Software Update" manage=off
 yabai -m rule --add app="System Information" manage=off
 
-borders active_color=0xffe1e3e4 inactive_color=0xff494d64 width=4.0 &
+borders active_color=0xff82cfff inactive_color=0xff494d64 width=5.0 &
 
 echo "yabai configuration loaded.."

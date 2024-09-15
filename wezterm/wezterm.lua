@@ -8,14 +8,14 @@ local config = {
 	font_size = 14.0,
 	-- color_scheme = "Catppuccin Mocha",
 	color_scheme = "Carbon Fox",
-	window_background_opacity = 0.8,
+	window_background_opacity = 0.85,
 	window_padding = {
-		left = 0,
-		right = 0,
-		top = 0,
-		bottom = 0,
+		left = 2,
+		right = 2,
+		top = 2,
+		bottom = 2,
 	},
-	-- window_background_image = "documents/wallpapers/slcdn6avjgn71.png",
+	macos_window_background_blur = 10,
 }
 
 config.leader = { key = "d", mods = "CTRL", timeout_milliseconds = 1000 }
