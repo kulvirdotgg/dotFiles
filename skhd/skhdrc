@@ -1,6 +1,6 @@
 # OPEN IT
 # cmd - return : /Applications/kitty.app/Contents/MacOS/kitty --single-instance -d ~
-cmd - return : /Applications/WezTerm.app/Contents/MacOS/wezterm start --cwd ~
+# cmd - return : /Applications/WezTerm.app/Contents/MacOS/wezterm start --cwd ~
 
 # focus window
 alt - h : yabai -m window --focus west
