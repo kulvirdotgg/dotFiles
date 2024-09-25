@@ -35,5 +35,5 @@ git clone https://github.com/kulvirdotgg/dotFiles.git
 ```
 
 ### Manual setup thingies (Ice age things)
-- [Arc](arc.net)
+- [Arc](https://arc.net)
 - Use Cool icons for terminal (Aplications > {app} > Content > Resrouces)
