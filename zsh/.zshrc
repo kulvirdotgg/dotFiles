@@ -11,7 +11,7 @@ alias gs='git status'
 
 alias python='python3'
 
-alias ls='ls --color'
+alias ls='lsd'
 alias nv='nvim'
 
 # cool to use tools (if ever wanted to)
