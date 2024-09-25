@@ -4,7 +4,7 @@
     </b>
 </h2>
 
-### ScreenShot
+### Screenshots
 
 ![](./assets/yabai.png)
 
@@ -33,3 +33,7 @@ git clone https://github.com/kulvirdotgg/dotFiles.git
 ```
 ./install.sh
 ```
+
+### Manual setup thingies (Ice age things)
+- [Arc](arc.net)
+- Use Cool icons for terminal (Aplications > {app} > Content > Resrouces)
