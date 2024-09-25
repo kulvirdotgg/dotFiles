@@ -1,5 +1,11 @@
+# ---- homebrew ----
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 ### ---- Syntax Highlighting ----
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# ---- zoxide ----
+eval "$(zoxide init --cmd cd zsh)"
 
 # ---- Git Aliases ----
 alias ga='git add'
@@ -9,16 +15,10 @@ alias gp='git pull'
 alias gpsh='git push'
 alias gs='git status'
 
-alias python='python3'
-
 alias ls='lsd'
 alias nv='nvim'
-
-# cool to use tools (if ever wanted to)
 alias neofetch="fastfetch"
-
-# ---- homebrew ----
-eval "$(/opt/homebrew/bin/brew shellenv)"
+alias python='python3'
 
 # ---- Air GO hot reload ----
 alias air="~/go/bin/air"
@@ -27,10 +27,10 @@ alias air="~/go/bin/air"
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
-# bun completions
 [ -s "/Users/kulvir/.bun/_bun" ] && source "/Users/kulvir/.bun/_bun"
 
+# ---- startship ----
 eval "$(starship init zsh)"
-export PATH="/opt/homebrew/opt/node@20/bin:$PATH"
 
-source <(fzf --zsh)
+# ---- node wtf idk but fine ----
+export PATH="/opt/homebrew/opt/node@20/bin:$PATH"

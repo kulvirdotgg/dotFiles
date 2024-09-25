@@ -1,14 +1,8 @@
 *.DS_Store**
 
 # tmux plugin files etc
-*tmux/**
-!tmux/tmux.conf
-
-# zsh history file
-*zsh/**
-!zsh/.zshrc
-
-*zed/**
+*.config/tmux/**
+**!tmux/tmux.conf
 
 # btop files
 *btop/**

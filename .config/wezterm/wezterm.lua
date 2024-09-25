@@ -18,26 +18,12 @@ local config = {
 	macos_window_background_blur = 10,
 }
 
-config.leader = { key = "d", mods = "CTRL", timeout_milliseconds = 1000 }
-config.keys = {
-	{
-		key = "|",
-		mods = "LEADER",
-		action = wezterm.action.SplitHorizontal({ domain = "CurrentPaneDomain" }),
-	},
-	{
-		key = "-",
-		mods = "LEADER",
-		action = wezterm.action.SplitVertical({ domain = "CurrentPaneDomain" }),
-	},
-}
-
 -- uncomment this if not using with some wm
-local mux = wezterm.mux
-
-wezterm.on("gui-startup", function()
-	local _, _, window = mux.spawn_window({})
-	window:gui_window():maximize()
-end)
+-- local mux = wezterm.mux
+--
+-- wezterm.on("gui-startup", function()
+-- 	local _, _, window = mux.spawn_window({})
+-- 	window:gui_window():maximize()
+-- end)
 
 return config

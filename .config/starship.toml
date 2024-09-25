@@ -15,10 +15,11 @@ ap-southeast-1 = 'in'
 # Enterprise_Naming_Scheme-voidstars = 'void**'
 
 [bun]
-format = '[🍞bun $version ](bold green)'
+format = '[🍞 bun $version ](bold green)'
 version_format = '${major}.${minor}'
 
 [c]
+detect_extensions = ['c', 'cpp']
 format = '[$symbol $name-$version ]($style)'
 symbol = ""
 version_format = '${major}.${minor}'
@@ -68,10 +69,13 @@ format = '[ $version ](bold cyan)'
 version_format = '${major}.${minor}'
 
 [nodejs]
-disabled = true
+detect_files = ['!bun.lockb']
+format = '[$symbol$version ]($style)'
+version_format = '${major}.${minor}'
 
 [package]
-disabled = true
+format = '[pkg $symbol$version]($style) '
+disabled = false
 
 [palettes.carbonfox]
 red = "#ee5396"

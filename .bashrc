@@ -1,7 +1,11 @@
-#fortune | cowsay -f tux "ara ara kulvir kun"
+# homebrew
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# ---- zoxide ----
+eval "$(zoxide init --cmd cd bash)"
 
 # ----------------------
-# Git Aliases
+# Aliases
 # ----------------------
 alias ga='git add'
 alias gaa='git add -A'
@@ -11,25 +15,22 @@ alias gpl='git pull'
 alias gp='git push'
 alias gs='git status'
 
+alias ls='lsd'
+alias cd='z'
+alias nv='nvim'
+alias neofetch="fastfetch"
 alias python='python3'
 
-alias nv='nvim'
-
-# Air for GO hot reload
+# ---- Air for GO ----
 alias air="~/go/bin/air"
 
-# homebrew
-eval "$(/opt/homebrew/bin/brew shellenv)"
-
-# cool to use tools (if ever wanted to)
-alias neofetch="macchina"
-# neofetch
-
-# bun
+# ---- bun ----
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
-
-# bun completions
 [ -s "/Users/kulvir/.bun/_bun" ] && source "/Users/kulvir/.bun/_bun"
 
+# ---- starship ----
 eval "$(starship init bash)"
+
+# ---- node wtf idk but fine ----
+export PATH="/opt/homebrew/opt/node@20/bin:$PATH"

@@ -1,12 +1,34 @@
-# Every week
+<h2 align="center">
+    <b style="font-size:24px;line-height:24px;vertical-align:middle;">
+        <i>JJs dotfiles</i>
+    </b>
+</h2>
 
-```bash
-brew install --cask alacritty discord font-hack-nerd-font font-meslo-lg-nerd-font google-chrome httpie keka kitty obsidian raycast spotify stats telegram
+### ScreenShot
+
+![](./assets/yabai.png)
+![](./assets/nvim.png)
+
+<details>
+    <summary>
+        <b>Catpuccin Theme Setup</b>
+        <span style="font-size:14px;">(expand)</span>
+    </summary>
+
+![](./assets/nvim.png)
+
+</details>
+
+### 🚀 Installation
+
+1.Clone this repository.
+
+```
+git clone https://github.com/kulvirdotgg/dotFiles.git
 ```
 
-```bash
-brew install btop fastfetch fzf git go neovim node ripgrep starship tmux zoxide zsh-syntax-highlighting
-```
+2.Run `install.sh` script. (provide `--yabai` flag to install **yabai** tiling window manager)
 
-## won't work unless you do it 
-- [tmux/tpm](https://github.com/tmux-plugins/tpm)
+```
+./install.sh
+```
