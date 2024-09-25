@@ -21,7 +21,8 @@ brew install wezterm
 brew install zoxide
 brew install zsh-fast-syntax-highlighting
 
-(cd dotFiles && stow .)
+echo "Creating symlinks using GNU STOW"
+stow .
 
 echo "Installing tmux package manager...."
 git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
@@ -73,4 +74,4 @@ if $install_yabai; then
 fi
 
 echo "setup complete...\n"
-echo "Install few apps from binaries, fckin Ice installation method...\n"
+echo "Install few apps from binaries,gfckin Ice installation method...\n"

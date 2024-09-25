@@ -24,13 +24,14 @@
 
 1.Clone this repository.
 
-```
+```sh
 git clone https://github.com/kulvirdotgg/dotFiles.git
 ```
 
 2.Run `install.sh` script. (provide `--yabai` flag to install **yabai** tiling window manager)
 
-```
+```sh
+cd dotFiles
 ./install.sh
 ```
 
