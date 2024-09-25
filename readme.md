@@ -7,6 +7,7 @@
 ### ScreenShot
 
 ![](./assets/yabai.png)
+
 ![](./assets/nvim.png)
 
 <details>
