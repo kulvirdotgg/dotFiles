@@ -4,19 +4,28 @@
     </b>
 </h2>
 
-### Screenshots
+![](./assets/kitty-cat.png)
 
-![](./assets/yabai.png)
+![](./assets/nvim-cat.png)
 
-![](./assets/nvim.png)
+![](./assets/telescope-cat.png)
+
+![](./assets/home.png)
 
 <details>
     <summary>
-        <b>Catpuccin Theme Setup</b>
+        <b>Yabai tiling wm</b>
         <span style="font-size:14px;">(expand)</span>
     </summary>
 
-![](./assets/nvim.png)
+
+![](./assets/yabai.png)
+
+![](./assets/nvim-wez-fox.png)
+
+    #### Bonus Kitty Becasue somehow even this theme looks better on Kitty than wezterm
+
+![](./assets/kitty-fox.png)
 
 </details>
 

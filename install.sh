@@ -24,6 +24,9 @@ brew install zsh-fast-syntax-highlighting
 echo "Creating symlinks using GNU STOW"
 stow .
 
+echo "Sourcing zsh config It should work now atleast"
+source ~/.zshrc
+
 echo "Installing tmux package manager...."
 git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
 
@@ -52,11 +55,12 @@ yabai() {
     brew install koekeishiya/formulae/yabai
     brew install koekeishiya/formulae/skhd
     brew install FelixKratz/formulae/borders
-    brew install sketchybar
+    brew install FelixKratz/formulae/sketchybar
     
-    yabai --restart-service
-    skhd --restart-service
+    yabai --start-service
+    skhd --start-service
     brew services start borders
+    brew services start sketchybar
 }
 
 install_yabai=false
