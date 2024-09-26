@@ -15,17 +15,13 @@
 <details>
     <summary>
         <b>Yabai tiling wm</b>
-        <span style="font-size:14px;">(expand)</span>
+        <span style="font-size:14px;"></span>
     </summary>
 
 
 ![](./assets/yabai-fox.png)
 
 ![](./assets/nvim-wez-fox.png)
-
-#### Bonus Kitty Becasue somehow even this theme looks better on Kitty than wezterm
-
-![](./assets/kitty-fox.png)
 
 </details>
 
