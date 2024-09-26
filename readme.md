@@ -19,11 +19,11 @@
     </summary>
 
 
-![](./assets/yabai.png)
+![](./assets/yabai-fox.png)
 
 ![](./assets/nvim-wez-fox.png)
 
-    #### Bonus Kitty Becasue somehow even this theme looks better on Kitty than wezterm
+#### Bonus Kitty Becasue somehow even this theme looks better on Kitty than wezterm
 
 ![](./assets/kitty-fox.png)
 
