@@ -32,7 +32,7 @@ error_symbol = "[✗](bold red)"
 disabled = true
 
 [directory]
-home_symbol= "󰊠"
+home_symbol= "󰊠 "
 truncation_length = 3
 truncate_to_repo = true
 truncation_symbol = "󰊠 "
