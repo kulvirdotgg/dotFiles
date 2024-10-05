@@ -1,12 +1,5 @@
 #!bin/zsh
 
-echo "Installing commandline tools..."
-xcode-select --install
-
-echo "Installing Brew..."
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-brew analytics off
-
 # ---- Terminal ----
 echo "Installing your Teminal and other thingies..."
 brew install git
@@ -19,7 +12,7 @@ brew install stow
 brew install tmux
 brew install wezterm
 brew install zoxide
-brew install zsh-fast-syntax-highlighting
+brew install zsh-syntax-highlighting
 
 echo "Creating symlinks using GNU STOW"
 stow .
