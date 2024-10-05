@@ -42,6 +42,7 @@ brew install pnpm
 # ---- Applications ----
 echo "Installing the Applications..."
 brew install --cask discord
+brew install --cask docker
 brew install --cask google-chrome
 brew install --cask httpie
 brew install --cask keka
