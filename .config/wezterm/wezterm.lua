@@ -19,11 +19,11 @@ local config = {
 }
 
 -- uncomment this if not using with some wm
-local mux = wezterm.mux
-
-wezterm.on("gui-startup", function()
-	local _, _, window = mux.spawn_window({})
-	window:gui_window():maximize()
-end)
+-- local mux = wezterm.mux
+--
+-- wezterm.on("gui-startup", function()
+-- 	local _, _, window = mux.spawn_window({})
+-- 	window:gui_window():maximize()
+-- end)
 
 return config

@@ -51,7 +51,9 @@ return {
                 },
             },
             pyright = {},
-            ts_ls = {},
+            tsserver = {},
+
+            -- ◍ typescript-language-server tsserver
             tailwindcss = {
                 filetypes = { "html", "css", "typescript", "typescriptreact" },
             },

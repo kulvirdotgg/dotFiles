@@ -1,7 +1,10 @@
-#!bin/zsh
+#!/bin/zsh
 
 # ---- Terminal ----
 echo "Installing your Teminal and other thingies..."
+brew install fastfetch
+brew install font-meslo-lg-nerd-font
+brew install fzf
 brew install git
 brew install kitty
 brew install lsd
@@ -10,7 +13,6 @@ brew install ripgrep
 brew install starship
 brew install stow
 brew install tmux
-brew install wezterm
 brew install zoxide
 brew install zsh-syntax-highlighting
 
@@ -20,17 +22,13 @@ stow .
 echo "Sourcing zsh config It should work now atleast"
 source ~/.zshrc
 
-echo "Installing tmux package manager...."
-git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
-
-# ---- Essentials ----
-brew install btop
-brew install oven-sh/bun/bun
-brew install fastfetch
-brew install font-meslo-lg-nerd-font
-brew install go
-brew install node
-brew install pnpm
+# ---- Maybe sometimes idk ----
+# brew install btop
+# brew install oven-sh/bun/bun
+# brew install go
+# brew install node
+# brew install pnpm
+# brew install wezterm
 
 # ---- Applications ----
 echo "Installing the Applications..."
@@ -38,7 +36,7 @@ brew install --cask discord
 brew install --cask docker
 brew install --cask google-chrome
 brew install --cask httpie
-brew install --cask keka
+# brew install --cask keka
 brew install --cask obsidian
 brew install --cask raycast
 brew install --cask spotify
