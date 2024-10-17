@@ -27,18 +27,20 @@
 
 ### 🚀 Installation
 
-1.Clone this repository.
+1. Clone this repository.
 
 ```sh
 git clone https://github.com/kulvirdotgg/dotFiles.git
 ```
 
-2.Run `install.sh` script. (provide `--yabai` flag to install **yabai** tiling window manager)
+2. Run `install.sh` script. (provide `--yabai` flag to install **yabai** tiling window manager)
 
 ```sh
 cd dotFiles
 ./install.sh
 ```
+
+3. Install `tmux tpm` from their [repo](https://github.com/tmux-plugins/tpm) as it causes some conflicts with my config.
 
 ### Manual setup thingies (Ice age things)
 - [Arc](https://arc.net)
