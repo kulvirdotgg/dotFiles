@@ -10,7 +10,7 @@
 
 ![](./assets/telescope-cat.png)
 
-![](./assets/home.png)
+![](./assets/home_.png)
 
 <details>
     <summary>
