@@ -27,10 +27,8 @@ alias air="~/go/bin/air"
 # ---- bun ----
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
-[ -s "/Users/kulvir/.bun/_bun" ] && source "/Users/kulvir/.bun/_bun"
+
+[ -s "/Users/lilj/.bun/_bun" ] && source "/Users/lilj/.bun/_bun"
 
 # ---- starship ----
 eval "$(starship init bash)"
-
-# ---- node wtf idk but fine ----
-export PATH="/opt/homebrew/opt/node@20/bin:$PATH"
