@@ -33,7 +33,7 @@ disabled = true
 
 [directory]
 home_symbol= "󰊠 "
-truncation_length = 3
+truncation_length = 2
 truncate_to_repo = true
 truncation_symbol = "󰊠 "
 style = "bold blue"

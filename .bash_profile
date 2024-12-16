@@ -4,6 +4,9 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 # ---- zoxide ----
 eval "$(zoxide init --cmd cd bash)"
 
+# ---- fzf ----
+eval "$(fzf --bash)"
+
 # ----------------------
 # Aliases
 # ----------------------

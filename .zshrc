@@ -7,6 +7,9 @@ source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # ---- zoxide ----
 eval "$(zoxide init --cmd cd zsh)"
 
+# ---- fzf ----
+source <(fzf --zsh)
+
 # ---- Git Aliases ----
 alias ga='git add'
 alias gaa='git add -A'
@@ -31,3 +34,6 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 # ---- startship ----
 eval "$(starship init zsh)"
+
+# ---- Better man pages ----
+export MANPAGER="nvim +Man!"
