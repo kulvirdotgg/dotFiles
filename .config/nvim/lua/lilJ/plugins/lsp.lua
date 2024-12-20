@@ -51,9 +51,8 @@ return {
                 },
             },
             pyright = {},
-            tsserver = {},
+            ts_ls = {},
 
-            -- ◍ typescript-language-server tsserver
             tailwindcss = {
                 filetypes = { "html", "css", "typescript", "typescriptreact" },
             },
@@ -84,6 +83,8 @@ return {
                     require("lspconfig")[server_name].setup(server)
                 end,
             },
+            ensure_installed = {},
+            automatic_installation = true,
         }
 
         local signs = { Error = " ", Warn = " ", Hint = "󰠠 ", Info = " " }

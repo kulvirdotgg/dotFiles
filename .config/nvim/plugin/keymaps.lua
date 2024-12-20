@@ -21,7 +21,8 @@ set("n", "<C-d>", "<C-d>zz")
 set("n", "<C-u>", "<C-u>zz")
 
 -- Navigate with Netrw
-set("n", "<leader>n", vim.cmd.Ex, { desc = "Open [N]etrw" })
+-- set("n", "<leader>n", vim.cmd.Ex, { desc = "Open [N]etrw" })
+
 -- Prime said this is greatest remap ever
 set("x", "<leader>p", [["_dP]])
 
