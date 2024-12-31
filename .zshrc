@@ -1,15 +1,6 @@
 # ---- homebrew ----
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-### ---- Syntax Highlighting ----
-source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-# ---- zoxide ----
-eval "$(zoxide init --cmd cd zsh)"
-
-# ---- fzf ----
-source <(fzf --zsh)
-
 # ---- Git Aliases ----
 alias ga='git add'
 alias gaa='git add -A'
@@ -26,14 +17,17 @@ alias python='python3'
 # ---- Air GO hot reload ----
 alias air="~/go/bin/air"
 
-# ---- bun ----
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
-
-[ -s "/Users/lilj/.bun/_bun" ] && source "/Users/lilj/.bun/_bun"
-
-# ---- startship ----
+# ---- starship ----
 eval "$(starship init zsh)"
 
-# ---- Better man pages ----
-export MANPAGER="nvim +Man!"
+# ---- zoxide ----
+eval "$(zoxide init --cmd cd zsh)"
+
+# ---- fzf ----
+source <(fzf --zsh)
+
+# ---- Syntax Highlighting ----
+source /nix/store/5vkzp4m7aazakijfaq579mk5i40j57x0-zsh-syntax-highlighting-0.8.0/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+eval "$(direnv hook zsh)"
+export PATH="/opt/homebrew/opt/node@18/bin:$PATH"
