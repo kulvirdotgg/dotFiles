@@ -1,9 +1,0 @@
-*.DS_Store**
-
-# tmux plugin files etc
-*.config/tmux/**
-**!tmux/tmux.conf
-
-# btop files
-*btop/**
-!btop/btop.conf
