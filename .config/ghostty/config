@@ -26,7 +26,7 @@ window-padding-balance = true
 
 # Don't use if using fullscreen
 window-width = 168
-window-height = 45
+window-height = 43
 
 # macos stuff
 quit-after-last-window-closed = true

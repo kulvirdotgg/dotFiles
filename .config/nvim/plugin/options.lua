@@ -2,9 +2,9 @@ local opt = vim.opt
 
 -- Use 4 space tabs
 -- TODO: Change this back when no company work
-opt.tabstop = 4
-opt.softtabstop = 4
-opt.shiftwidth = 4
+opt.tabstop = 2
+opt.softtabstop = 2
+opt.shiftwidth = 2
 
 opt.number = true
 opt.relativenumber = true
