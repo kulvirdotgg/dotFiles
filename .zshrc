@@ -24,8 +24,3 @@ eval "$(zoxide init --cmd cd zsh)"
 
 # ---- fzf ----
 source <(fzf --zsh)
-
-# ---- Syntax Highlighting ----
-source /nix/store/5vkzp4m7aazakijfaq579mk5i40j57x0-zsh-syntax-highlighting-0.8.0/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-eval "$(direnv hook zsh)"
