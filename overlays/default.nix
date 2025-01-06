@@ -5,7 +5,6 @@
     # ghostty = inputs.ghostty.packages.aarch64-darwin.default;
 
     discord = prev.discord.override {
-      withOpenASAR = true;
       withVencord = true;
     };
   };

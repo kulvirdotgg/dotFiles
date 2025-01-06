@@ -1,5 +1,7 @@
-{outputs, ...}: {
+{inputs, outputs, username, email, ...}: {
   imports = [
+    inputs.home-manager.darwinModules.home-manager
+
     ./configuration.nix
     ./mac-apps.nix
     ./nix.nix
@@ -12,5 +14,12 @@
       outputs.overlays.stable-packages
       # outputs.overlays.nur
     ];
+  };
+
+  home-manager = {
+    backupFileExtension = "hnm";
+    useUserPackages = true;
+    extraSpecialArgs = {inherit username email outputs;};
+    users.${username} = import ./home.nix;
   };
 }

@@ -23,10 +23,10 @@
     username = "lilj";
     email = "kulvir@duck.com";
 
-    system = "aarch64-darwin"; # apple target arch
+    system = "aarch64-darwin"; # apple
+    x86 = "x86_64-linux"
     forAllSystems = nixpkgs.lib.genAttrs [
       "aarch64-darwin"
-      "aarch64-linux"
     ];
     inherit (self) outputs;
   in {
@@ -40,27 +40,16 @@
       specialArgs = {inherit inputs username email outputs system;};
       modules = [
         ./hosts/mba
-
-        home-manager.darwinModules.home-manager
-        {
-          home-manager.useGlobalPkgs = true;
-          home-manager.useUserPackages = true;
-          home-manager.users.lilj = import ./hosts/mba/home.nix;
-          home-manager.extraSpecialArgs = {inherit username email outputs;};
-        }
       ];
     };
 
     # darwin-rebuild switch --flake .#vps
-    nixosConfigurations = forAllSystems (system: {
-      "vps" = nixpkgs.lib.nixosSystem {
-        inherit system;
-        specialArgs = {inherit inputs username email outputs system;};
-        modules = [
-          ./hosts/mba
-        ];
-      };
-    });
+    nixosConfigurations."vps" = nixpkgs.lib.nixosSystem {
+      specialArgs = {inherit inputs username email outputs;};
+      modules = [
+        ./hosts/vps
+      ];
+    };
 
     formatter = forAllSystems (system: nixpkgs.legacyPackages.${system}.alejandra);
   };

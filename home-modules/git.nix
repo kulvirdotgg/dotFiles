@@ -7,8 +7,8 @@
   programs.git = {
     enable = true;
 
-    userName = "${username}";
-    userEmail = "${email}";
+    userName = "Kulvir Singh";
+    userEmail = "kulvirs734@gmail.com";
 
     aliases = {
       cm = "commit -m";
@@ -22,7 +22,7 @@
 
     # includes = [
     #   {
-    #     path = "~/corpo/.gitconfig";
+    #     path = "./.gitconfig";
     #     condition = "gitdir:~/path/corpo/";
     #   }
     # ];
