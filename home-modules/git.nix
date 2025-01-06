@@ -20,13 +20,6 @@
       ".env"
     ];
 
-    # includes = [
-    #   {
-    #     path = "./.gitconfig";
-    #     condition = "gitdir:~/path/corpo/";
-    #   }
-    # ];
-
     lfs.enable = true; # make ptr to large files(audio/video) locally
 
     extraConfig = {

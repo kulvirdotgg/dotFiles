@@ -24,7 +24,7 @@
     email = "kulvir@duck.com";
 
     system = "aarch64-darwin"; # apple
-    x86 = "x86_64-linux"
+    x86 = "x86_64-linux";
     forAllSystems = nixpkgs.lib.genAttrs [
       "aarch64-darwin"
     ];
