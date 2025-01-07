@@ -33,8 +33,10 @@
     };
 
     brews = [];
+
     casks = [
       "raycast"
+      "firefox"
 
       # CORPO
       "mongodb-compass"

@@ -6,7 +6,7 @@
   ...
 }: {
   imports = [
-    ../../home-modules/alacritty.nix
+    # ../../home-modules/alacritty.nix
     ../../home-modules/git.nix
     ../../home-modules/kitty.nix
     ../../home-modules/nvim.nix
@@ -23,8 +23,6 @@
     pkgs.pnpm
 
     pkgs.discord
-    # pkgs.firefox
-    # pkgs.ghostty
     pkgs.obsidian
     pkgs.spotify
     pkgs.redis
@@ -36,7 +34,6 @@
       outputs.overlays.additions
       outputs.overlays.modifications
       outputs.overlays.stable-packages
-      # outputs.overlays.nur
     ];
   };
 
