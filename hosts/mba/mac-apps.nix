@@ -34,11 +34,7 @@
 
     brews = [];
     casks = [
-      "discord"
-      "obsidian"
       "raycast"
-      "spotify"
-      "telegram-desktop"
 
       # CORPO
       "mongodb-compass"

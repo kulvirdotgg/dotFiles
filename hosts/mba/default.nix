@@ -1,4 +1,10 @@
-{inputs, outputs, username, email, ...}: {
+{
+  inputs,
+  outputs,
+  username,
+  email,
+  ...
+}: {
   imports = [
     inputs.home-manager.darwinModules.home-manager
 
@@ -7,6 +13,7 @@
     ./nix.nix
     ./users.nix
   ];
+
   nixpkgs = {
     overlays = [
       outputs.overlays.additions
@@ -18,6 +25,7 @@
 
   home-manager = {
     backupFileExtension = "hnm";
+    useGlobalPkgs = true;
     useUserPackages = true;
     extraSpecialArgs = {inherit username email outputs;};
     users.${username} = import ./home.nix;

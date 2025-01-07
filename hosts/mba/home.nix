@@ -6,7 +6,7 @@
   ...
 }: {
   imports = [
-    # ../../modules/alacritty.nix
+    ../../home-modules/alacritty.nix
     ../../home-modules/git.nix
     ../../home-modules/kitty.nix
     ../../home-modules/nvim.nix
@@ -21,6 +21,14 @@
     pkgs.go
     pkgs.nodejs_23
     pkgs.pnpm
+
+    pkgs.discord
+    # pkgs.firefox
+    # pkgs.ghostty
+    pkgs.obsidian
+    pkgs.spotify
+    pkgs.redis
+    pkgs.telegram-desktop
   ];
 
   nixpkgs = {

@@ -2,9 +2,8 @@
   additions = final: _prev: import ../pkgs {pkgs = final;};
 
   modifications = final: prev: {
-    # ghostty = inputs.ghostty.packages.aarch64-darwin.default;
-
     discord = prev.discord.override {
+      withOpenASAR = true;
       withVencord = true;
     };
   };

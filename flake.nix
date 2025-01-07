@@ -11,6 +11,7 @@
       url = "github:LnL7/nix-darwin";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    # nur.url = "github:nix-community/nur";
   };
 
   outputs = inputs @ {
@@ -30,9 +31,8 @@
     ];
     inherit (self) outputs;
   in {
-    # Custom packages and modifications
+    # own packages and some modifications
     packages = forAllSystems (system: import ./pkgs nixpkgs.legacyPackages.${system});
-
     overlays = import ./overlays {inherit inputs;};
 
     # darwin-rebuild switch --flake .#mba
