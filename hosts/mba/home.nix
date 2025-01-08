@@ -17,16 +17,15 @@
 
   home.packages = [
     pkgs.air
+    pkgs.awsebcli
     pkgs.bun
     pkgs.go
     pkgs.nodejs_23
+    pkgs.python314 # coz awsebcli requires python in $PATH
     pkgs.pnpm
 
-    pkgs.discord
-    pkgs.obsidian
-    pkgs.spotify
+    pkgs.discord # not working without overlays (darwin sucks)
     pkgs.redis
-    pkgs.telegram-desktop
   ];
 
   nixpkgs = {

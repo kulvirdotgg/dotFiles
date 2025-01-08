@@ -20,11 +20,36 @@
     pkgs.nerd-fonts.jetbrains-mono
     # Alternate Fonts
     # pkgs.nerd-fonts.caskaydia-mono
-    # pkgs.nerd-fonts.iosevka
+    pkgs.nerd-fonts.iosevka
   ];
 
   homebrew = {
     enable = true;
+
+    brews = [
+      # "mongodb/brew/mongodb-community"
+    ];
+
+    caskArgs = {
+      appdir = "/Applications";
+      require_sha = true;
+    }
+
+    # darwin support for packages sucks
+    casks = [
+      "firefox"
+      "raycast"
+      "obsidian"
+      "spotify"
+
+      # not me using em :(
+      "mongodb-compass"
+      "postman"
+      "slack"
+      "zoom"
+    ];
+
+    global.autoUpdate = true;
 
     onActivation = {
       autoUpdate = true;
@@ -32,17 +57,6 @@
       cleanup = "zap";
     };
 
-    brews = [];
-
-    casks = [
-      "raycast"
-      "firefox"
-
-      # CORPO
-      "mongodb-compass"
-      "postman"
-      "slack"
-      "zoom"
-    ];
+    taps = []
   };
 }
