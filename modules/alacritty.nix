@@ -1,4 +1,4 @@
-{config, ...}: {
+{...}: {
   programs.alacritty = {
     enable = true;
     settings = {
@@ -17,8 +17,6 @@
         bold_italic.family = "JetBrainsMono Nerd Font";
         size = 16;
       };
-
-      general.live_config_reload = true;
 
       mouse.hide_when_typing = true;
 

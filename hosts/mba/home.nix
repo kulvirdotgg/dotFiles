@@ -6,13 +6,14 @@
   ...
 }: {
   imports = [
-    # ../../home-modules/alacritty.nix
-    ../../home-modules/git.nix
-    ../../home-modules/kitty.nix
-    ../../home-modules/nvim.nix
-    ../../home-modules/shell.nix
-    ../../home-modules/starship.nix
-    ../../home-modules/tmux.nix
+    # ../../modules/alacritty.nix
+    ../../modules/git.nix
+    ../../modules/kitty.nix
+    ../../modules/nvim.nix
+    ../../modules/shell.nix
+    ../../modules/starship.nix
+    ../../modules/tmux.nix
+    ../../modules/zed.nix
   ];
 
   home.packages = [
@@ -24,8 +25,9 @@
     pkgs.python314 # coz awsebcli requires python in $PATH
     pkgs.pnpm
 
-    pkgs.discord # not working without overlays (darwin sucks)
+    pkgs.discord # nigga ain't working properly
     pkgs.redis
+    pkgs.zed-editor
   ];
 
   nixpkgs = {

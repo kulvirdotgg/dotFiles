@@ -8,8 +8,7 @@
   nixpkgs.config.allowUnfree = true;
 
   # Cross-compile GNU/Linux binaries, or even full GNU/Linux system images
-  # from someone's config, could be useful but idk
-  # nix.linux-builder.enable = true;
+  nix.linux-builder.enable = true;
 
   nix.settings.experimental-features = "nix-command flakes";
 
@@ -20,7 +19,7 @@
   nix.gc = {
     user = "root";
     automatic = lib.mkDefault true;
-    options = lib.mkDefault "--delete-older-than 7d";
+    options = lib.mkDefault "--delete-older-than 4d";
   };
 
   # Disable auto-optimise-store because of this issue:

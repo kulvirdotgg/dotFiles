@@ -3,9 +3,7 @@
   config,
   ...
 }: {
-  environment.systemPackages = [
-    pkgs.fastfetch
-  ];
+  environment.systemPackages = [];
 
   environment.variables = {
     MANPAGER = "nvim +Man!";
@@ -32,12 +30,12 @@
 
     caskArgs = {
       appdir = "/Applications";
-      require_sha = true;
-    }
+      # require_sha = true;
+    };
 
     # darwin support for packages sucks
     casks = [
-      "firefox"
+      "firefox" # some dependancy issue
       "raycast"
       "obsidian"
       "spotify"
@@ -57,6 +55,6 @@
       cleanup = "zap";
     };
 
-    taps = []
+    taps = [];
   };
 }

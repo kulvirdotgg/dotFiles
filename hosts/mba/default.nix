@@ -24,9 +24,9 @@
 
   home-manager = {
     backupFileExtension = "hnm";
+    extraSpecialArgs = {inherit username email outputs;};
     useGlobalPkgs = true;
     useUserPackages = true;
-    extraSpecialArgs = {inherit username email outputs;};
     users.${username} = import ./home.nix;
   };
 }
