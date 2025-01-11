@@ -33,7 +33,6 @@
       FXPreferredViewStyle = "Nlsv";
       NewWindowTarget = "Other";
       NewWindowTargetPath = "file:///Users/lilj/Downloads";
-      QuitMenuItem = true;
       ShowPathbar = true;
       ShowStatusBar = true;
       ShowRemovableMediaOnDesktop = false;

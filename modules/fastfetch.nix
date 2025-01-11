@@ -39,11 +39,6 @@
           keyColor = "green";
         }
         {
-          type = "wmtheme";
-          key = " ├ 󰉼 ";
-          keyColor = "green";
-        }
-        {
           type = "icons";
           key = " ├ 󰀻 ";
           keyColor = "green";
@@ -55,12 +50,7 @@
         }
         {
           type = "terminal";
-          key = " ├  ";
-          keyColor = "green";
-        }
-        {
-          type = "terminalfont";
-          key = " └  ";
+          key = " └  ";
           keyColor = "green";
         }
         "break"
@@ -77,17 +67,6 @@
           keyColor = "yellow";
         }
         {
-          type = "gpu";
-          format = "{1} {2} @ {12} GHz";
-          key = " ├ 󰢮 ";
-          keyColor = "yellow";
-        }
-        {
-          type = "uptime";
-          key = " └  ";
-          keyColor = "yellow";
-        }
-        {
           type = "memory";
           key = " ├  ";
           keyColor = "yellow";
@@ -100,6 +79,11 @@
         {
           type = "disk";
           key = " ├ 󰋊 ";
+          keyColor = "yellow";
+        }
+        {
+          type = "uptime";
+          key = " ├  ";
           keyColor = "yellow";
         }
         {

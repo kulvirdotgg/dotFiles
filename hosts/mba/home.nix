@@ -8,6 +8,7 @@
   imports = [
     # ../../modules/alacritty.nix
     ../../modules/git.nix
+    ../../modules/fastfetch.nix
     ../../modules/kitty.nix
     ../../modules/nvim.nix
     ../../modules/shell.nix

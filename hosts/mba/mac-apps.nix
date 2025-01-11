@@ -18,7 +18,7 @@
     pkgs.nerd-fonts.jetbrains-mono
     # Alternate Fonts
     # pkgs.nerd-fonts.caskaydia-mono
-    pkgs.nerd-fonts.iosevka
+    # pkgs.nerd-fonts.iosevka
   ];
 
   homebrew = {
@@ -30,7 +30,6 @@
 
     caskArgs = {
       appdir = "/Applications";
-      # require_sha = true;
     };
 
     # darwin support for packages sucks

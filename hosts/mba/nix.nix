@@ -19,12 +19,11 @@
   nix.gc = {
     user = "root";
     automatic = lib.mkDefault true;
-    options = lib.mkDefault "--delete-older-than 4d";
+    options = lib.mkDefault "--delete-older-than 5d";
   };
 
-  # Disable auto-optimise-store because of this issue:
   # https://github.com/NixOS/nix/issues/7273
-  # nix.settings = {
-  #     auto-optimise-store = false;
-  # };
+  nix.settings = {
+      auto-optimise-store = false;
+  };
 }

@@ -4,18 +4,19 @@
     settings = {
       add_newline = true;
       continuation_prompt = "▶▶ ";
-      format = ''$directory$all$character'';
+      format = "$directory$c$bun$golang$nodejs(bold blue)$git_branch$git_status[❯](bold yellow)[❯](bold purple)[❯](bold blue)\n$character";
+      # format = ''$directory$all$character'';
       palette = "catppuccin_mocha";
       scan_timeout = 120;
 
       bun = {
-        format = "[🍞 bun $version ](bold green)";
+        format = "[🍞 $version ](bold green)";
         version_format = "\${major}.\${minor}";
       };
 
       c = {
         detect_extensions = ["c" "cpp"];
-        format = "[$symbol $name-$version ]($style)";
+        format = "[$symbol $version ]($style)";
         symbol = "";
         version_format = "\${major}.\${minor}";
       };
@@ -38,21 +39,11 @@
       };
 
       git_branch = {
-        format = "[ $symbol$branch ]($style)";
+        format = "[$symbol$branch ]($style)";
         style = "bold purple";
         symbol = " ";
         always_show_remote = true;
       };
-
-      # git_status = {
-      #   format = "([$all_status$ahead_behind]($style))";
-      #   up_to_date = "✓";
-      #   ahead = "⇡\${count}";
-      #   diverged = "⇕⇡\${ahead_count}⇣\${behind_count}";
-      #   behind = "⇣\${count}";
-      #   stashed = "📦 ";
-      #   staged = "[++($count)](green)";
-      # };
 
       golang = {
         format = "[$symbol $version ](bold cyan)";
@@ -62,7 +53,7 @@
 
       hostname = {
         ssh_only = true;
-        format = "[$ssh_symbol$hostname]($style)";
+        format = "[$ssh_symbol$hostname ]($style)";
         style = "bold green";
         ssh_symbol = "󰇧 ";
         disabled = false;
@@ -72,11 +63,6 @@
         detect_files = ["!bun.lockb"];
         format = "[$symbol$version ]($style)";
         version_format = "\${major}.\${minor}";
-      };
-
-      package = {
-        format = "[pkg $symbol$version]($style) ";
-        disabled = true;
       };
 
       palettes.catppuccin_mocha = {
