@@ -16,7 +16,6 @@ return {
 
         -- GO DEBUG
         "leoluz/nvim-dap-go",
-        "mfussenegger/nvim-dap-python",
     },
     config = function()
         local dap = require "dap"
@@ -56,6 +55,7 @@ return {
             },
         }
 
+        -- the very common keybind `<leader>db` overlaps with some other keybind
         vim.keymap.set("n", "<leader>dt", dap.toggle_breakpoint, { desc = "Debug: Toggle Breakpoint" })
 
         vim.keymap.set("n", "<Space>?", function()
@@ -84,6 +84,5 @@ return {
         end
 
         require("dap-go").setup()
-        require("dap-python").setup "~/.local/share/nvim/mason/packages/debugpy/venv/bin/python"
     end,
 }

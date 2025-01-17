@@ -6,7 +6,7 @@ return {
             local lint = require "lint"
 
             lint.linters_by_ft = {
-                python = { "ruff", "mypy" },
+                -- python = { "ruff", "mypy" },
                 dockerfile = { "hadolint" },
                 json = { "jsonlint" },
                 markdown = { "vale" },

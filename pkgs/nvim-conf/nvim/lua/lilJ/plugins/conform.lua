@@ -12,7 +12,7 @@ return {
         formatters_by_ft = {
             c = { "clang-format" },
             css = { "prettier" },
-            go = { "gofumpt", "goimports_reviser" },
+            go = { "gofumpt", "goimports-reviser" },
             html = { "prettier" },
             lua = { "stylua" },
             typescript = { "prettier" },
