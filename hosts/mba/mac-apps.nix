@@ -38,6 +38,7 @@
       "raycast"
       "obsidian"
       "spotify"
+      "docker"
 
       # not me using em :(
       "mongodb-compass"
