@@ -24,10 +24,6 @@
   homebrew = {
     enable = true;
 
-    brews = [
-      # "mongodb/brew/mongodb-community"
-    ];
-
     caskArgs = {
       appdir = "/Applications";
     };

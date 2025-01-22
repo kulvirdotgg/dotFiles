@@ -10,15 +10,33 @@
       buffer_font_size = 14;
       buffer_font_family = "JetBrainsMono Nerd Font";
 
+      ensure_final_newline_on_save = false;
+
+      hard_tabs = true;
+
       languages = {
         "TypeScript" = {
           code_actions_on_format = {
-            source.fixAll.eslint = true;
-            source.organizeImports = true;
+            "source.fixAll.eslint" = true;
+            "source.organizeImports" = true;
+          };
+          codeActionOnSave = {
+            rules = ["import/order"];
           };
           formatter = "prettier";
         };
       };
+
+      lsp = {
+      };
+
+      search = {
+        regex = true;
+      };
+
+      show_whitespaces = "boundary";
+
+      tab_size = 4;
 
       tab_bar = {
         show_nav_history_buttons = false;
