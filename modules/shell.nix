@@ -4,6 +4,7 @@
       enable = true;
       shellAliases = {
         ls = "lsd";
+        lg = "lazygit";
         neofetch = "fastfetch";
         nv = "nvim";
         python = "python3";
