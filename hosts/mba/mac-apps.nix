@@ -37,7 +37,6 @@
       "zen-browser"
 
       # not me using em :(
-      "mongodb-compass"
       "postman"
       "slack"
       "zoom"
