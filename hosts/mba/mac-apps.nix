@@ -30,11 +30,11 @@
 
     # darwin support for packages sucks
     casks = [
-      "firefox" # some dependancy issue
-      "raycast"
-      "obsidian"
-      "spotify"
       "docker"
+      "obsidian"
+      "raycast"
+      "spotify"
+      "zen-browser"
 
       # not me using em :(
       "mongodb-compass"
