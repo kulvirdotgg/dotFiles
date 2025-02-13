@@ -24,6 +24,10 @@
   homebrew = {
     enable = true;
 
+    brews = [
+      # "bun"
+    ];
+
     caskArgs = {
       appdir = "/Applications";
     };
@@ -50,6 +54,8 @@
       cleanup = "zap";
     };
 
-    taps = [];
+    taps = [
+      # "oven-sh/bun"
+    ];
   };
 }

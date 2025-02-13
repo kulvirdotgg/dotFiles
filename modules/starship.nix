@@ -60,7 +60,7 @@
       };
 
       nodejs = {
-        detect_files = ["!bun.lockb"];
+        detect_files = ["!bun.lock"];
         format = "[$symbol$version ]($style)";
         version_format = "\${major}.\${minor}";
       };

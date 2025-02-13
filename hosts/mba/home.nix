@@ -19,7 +19,7 @@
 
   home.packages = [
     pkgs.air
-    # pkgs.bun
+    pkgs.bun
     pkgs.go
     pkgs.nodejs_23
     # pkgs.python314 # coz awsebcli requires python in $PATH

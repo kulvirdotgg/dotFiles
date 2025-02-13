@@ -14,10 +14,7 @@
 
   nixpkgs.hostPlatform = "${system}";
 
-  services.nix-daemon.enable = true;
-
   nix.gc = {
-    user = "root";
     automatic = lib.mkDefault true;
     options = lib.mkDefault "--delete-older-than 5d";
   };
