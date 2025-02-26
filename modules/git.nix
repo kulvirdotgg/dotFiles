@@ -9,10 +9,7 @@
     userName = "Kulvir Singh";
     userEmail = "kulvirs734@gmail.com";
 
-    aliases = {
-      cm = "commit -m";
-      amend = "commit --amend";
-    };
+    aliases = {};
 
     ignores = [
       ".DS_Store"

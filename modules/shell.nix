@@ -2,13 +2,10 @@
   programs = {
     zsh = {
       enable = true;
-        envExtra = ''
-          eval "$(/opt/homebrew/bin/brew shellenv)"
-          export PATH="/opt/homebrew/bin:$PATH"
-
-          # export BUN_INSTALL="$HOME/.bun"
-          # export PATH="$BUN_INSTALL/bin:$PATH"
-        '';
+      envExtra = ''
+        eval "$(/opt/homebrew/bin/brew shellenv)"
+        export PATH="/opt/homebrew/bin:$PATH"
+      '';
       shellAliases = {
         ls = "lsd";
         lg = "lazygit";

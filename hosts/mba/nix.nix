@@ -13,14 +13,4 @@
   nix.settings.experimental-features = "nix-command flakes";
 
   nixpkgs.hostPlatform = "${system}";
-
-  nix.gc = {
-    automatic = lib.mkDefault true;
-    options = lib.mkDefault "--delete-older-than 5d";
-  };
-
-  # https://github.com/NixOS/nix/issues/7273
-  nix.settings = {
-    auto-optimise-store = false;
-  };
 }

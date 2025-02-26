@@ -14,7 +14,6 @@
     ../../modules/shell.nix
     ../../modules/starship.nix
     ../../modules/tmux.nix
-    ../../modules/zed.nix
   ];
 
   home.packages = [
@@ -22,12 +21,10 @@
     pkgs.bun
     pkgs.go
     pkgs.nodejs_23
-    # pkgs.python314 # coz awsebcli requires python in $PATH
     pkgs.pnpm
 
     pkgs.discord # nigga ain't working properly
     pkgs.redis
-    pkgs.zed-editor
   ];
 
   nixpkgs = {
