@@ -25,6 +25,7 @@
 
     pkgs.discord # nigga ain't working properly
     pkgs.redis
+    pkgs.postgresql_17_jit
   ];
 
   nixpkgs = {
