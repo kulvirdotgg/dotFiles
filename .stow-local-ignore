@@ -32,7 +32,7 @@ assets
 # comment stuff from here if using in future maybe
 .clang-format
 .bash_profile
-./config/alacritty
-./config/skhd
-./config/sketchybar
-./config/yabai
+^/alacritty*
+^/skhd*
+^/sketchybar*
+^/yabai*

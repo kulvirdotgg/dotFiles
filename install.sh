@@ -2,19 +2,21 @@
 
 # ---- Terminal ----
 echo "Installing your Teminal and other thingies..."
-brew install fastfetch
-brew install font-meslo-lg-nerd-font
-brew install fzf
 brew install git
-brew install kitty
-brew install lsd
-brew install neovim
-brew install ripgrep
+brew install ghostty
 brew install starship
-brew install stow
+brew install neovim
+brew install font-jetbrains-mono-nerd-font
 brew install tmux
+brew install fzf
+brew install lsd
+brew install ripgrep
 brew install zoxide
+brew install lazygit
+brew install fastfetch
+brew install btop
 brew install zsh-syntax-highlighting
+brew install stow
 
 echo "Creating symlinks using GNU STOW"
 stow .
@@ -22,25 +24,23 @@ stow .
 echo "Sourcing zsh config It should work now atleast"
 source ~/.zshrc
 
-# ---- Maybe sometimes idk ----
-# brew install btop
-# brew install oven-sh/bun/bun
-# brew install go
-# brew install node
-# brew install pnpm
-# brew install wezterm
+echo "Installing languages & runtime envs etc..."
+brew install oven-sh/bun/bun
+brew install go
+brew install node
+brew install pnpm
 
 # ---- Applications ----
 echo "Installing the Applications..."
 brew install --cask discord
 brew install --cask docker
-brew install --cask google-chrome
+brew install --cask ghostty
 brew install --cask httpie
-# brew install --cask keka
+brew install --cask keka
 brew install --cask obsidian
 brew install --cask raycast
 brew install --cask spotify
-brew install --cask telegram
+brew install --cask zen-browser
 
 
 yabai() {
@@ -70,4 +70,3 @@ if $install_yabai; then
 fi
 
 echo "setup complete...\n"
-echo "Install few apps from binaries,gfckin Ice installation method...\n"
