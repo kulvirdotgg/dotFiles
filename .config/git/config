@@ -1,7 +1,11 @@
 [credential]
-	helper = cache
+  helper = cache
 [user]
-	name = Kulvir Singh
-	email = kulvirs734@gmail.com
+  name = Kulvir Singh
+  email = kulvirs734@gmail.com
 [init]
-	defaultBranch = trunk
+  defaultBranch = trunk
+[lfs]
+  enable = true
+[push]
+  autoSetupRemote = true

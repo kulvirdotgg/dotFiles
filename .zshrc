@@ -24,4 +24,4 @@ source <(fzf --zsh)
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 export EDITOR="nvim"
-export MANPAGER = "nvim +Man!"
+export MANPAGER="nvim +Man!"
