@@ -1,13 +1,13 @@
 theme = "catppuccin-mocha"
 
 font-size = 14
-font-family = "MesloLGS Nerd Font Mono"
+font-family = "JetbrainsMono Nerd Font"
 font-thicken = true
 
-cursor-style = block
+cursor-style = bar
 cursor-style-blink = false
 
-background-opacity = 0.95
+background-opacity = 0.85
 background-blur-radius = 8
 
 mouse-hide-while-typing = true
@@ -26,12 +26,12 @@ window-padding-balance = true
 
 # Don't use if using fullscreen
 window-width = 168
-window-height = 43
+window-height = 47
 
 # macos stuff
 quit-after-last-window-closed = true
 macos-option-as-alt = true
-fullscreen = true
+# fullscreen = true
 # macos-non-native-fullscreen = true # fullscreen, hide menubar and dock toooo
 
 keybind = cmd+backspace=text:\x15 
