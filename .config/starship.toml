@@ -1,27 +1,12 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
-add_newline = true
-continuation_prompt = '▶▶ '
-format = """$directory$all$character"""
+# add_newline = true
+# continuation_prompt = '▶▶ '
+format = "$directory$bun$nodejs$golang$python$git_branch$git_status $git_metrics$git_state[❯](bold yellow)[❯](bold purple)[❯](bold blue)\n$character"
 palette = "catppuccin_mocha"
 
-[aws]
-symbol = ""
-
-[aws.region_aliases]
-ap-southeast-1 = 'in'
-
-# [aws.profile_aliases]
-# Enterprise_Naming_Scheme-voidstars = 'void**'
-
 [bun]
-format = '[🍞 bun $version ](bold green)'
-version_format = '${major}.${minor}'
-
-[c]
-detect_extensions = ['c', 'cpp']
-format = '[$symbol $name-$version ]($style)'
-symbol = ""
+format = '[🍞bun](bold green)'
 version_format = '${major}.${minor}'
 
 [character]
@@ -38,58 +23,33 @@ truncate_to_repo = true
 truncation_symbol = "󰊠 "
 style = "bold blue"
 
-[docker_context]
-format = 'in [$symbol$context]($style) '
-
 [git_branch]
-format='[ $symbol$branch :\($remote_branch\) ]($style)'
+format='[$symbol$branch]($style)'
 style='bold purple'
 symbol=" "
-always_show_remote = true
 
 [git_state]
-cherry_pick = '[🍒 PICKING](bold red)'
+cherry_pick = '[🍒](bold red)'
 
 [git_metrics]
-# format = '[+$added]($added_style) [-$deleted]($deleted_style) '
+format = '[+$added]($added_style)[-$deleted]($deleted_style) '
 disabled = false
 
 [git_status]
-format = '([\[$all_status$ahead_behind\]]($style) )'
+format = '( [\[$all_status$ahead_behind\]]($style))'
 up_to_date = '✓'
 ahead = '⇡${count}'
 diverged = '⇕⇡${ahead_count}⇣${behind_count}'
 behind = '⇣${count}'
-stashed = '📦'
 staged = '[++\($count\)](green)'
 
 
 [golang]
-format = '[ $version ](bold cyan)'
-version_format = '${major}.${minor}'
+format = '[ ](bold cyan)'
 
 [nodejs]
-detect_files = ['!bun.lockb']
-format = '[$symbol$version ]($style)'
-version_format = '${major}.${minor}'
-
-[package]
-format = '[pkg $symbol$version]($style) '
-disabled = false
-
-[palettes.carbonfox]
-red = "#ee5396"
-green = "#25be6a"
-purple = "#be95ff"
-yellow = "#08bdba"
-os_bg = "#7b7c7e"
-os_fg = "#0c0c0c"
-dir_bg = "#25be6a"
-dir_fg = "#161616"
-git_bg = "#08bdba"
-git_fg = "#252525"
-lang_bg = "#78a9ff"
-lang_fg = "#353535"
+detect_files = ['!bun.lock']
+format = '[$symbol]($style)'
 
 [palettes.catppuccin_mocha]
 rosewater = "#f5e0dc"
@@ -121,10 +81,5 @@ crust = "#11111b"
 
 [python]
 symbol = " "
-format = '[(\($virtualenv\) )${symbol}(${version} )]($style)'
+format = '[(\($virtualenv\))${symbol}]($style)'
 version_format = '${major}.${minor}'
-
-[sudo]
-format = '[ as sudo]($style)'	
-style = 'bold blue'
-disabled = false
