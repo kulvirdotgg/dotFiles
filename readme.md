@@ -23,5 +23,5 @@ cd dotFiles
 
 3. Install `tmux tpm` from their [repo](https://github.com/tmux-plugins/tpm)
 ```sh
-git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins
+git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
 ```
