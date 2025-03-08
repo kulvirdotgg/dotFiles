@@ -19,10 +19,20 @@ _darcs
 \#.*\#       # emacs autosave files
 
 ^/README.*
+^/readme.*
 ^/LICENSE.*
 ^/COPYING
 
+# extra stuff not part of configs
 install.sh
 assets
-cool-icons
-readme.md
+
+# NOTE:
+# do not symlink configs for packages currently not in use
+# comment stuff from here if using in future maybe
+.clang-format
+.bash_profile
+./config/alacritty
+./config/skhd
+./config/sketchybar
+./config/yabai
