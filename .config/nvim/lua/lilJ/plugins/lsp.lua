@@ -21,12 +21,8 @@ return {
 
         -- Enable the following language servers
         local servers = {
-            clangd = {},
             gopls = {
                 filetypes = { "go", "gomod", "gowork", "gotmpl" },
-            },
-            html = {
-                filetypes = { "html", "tmpl" },
             },
             jsonls = {
                 settings = {
@@ -50,7 +46,6 @@ return {
                     },
                 },
             },
-            pyright = {},
             ts_ls = {},
 
             tailwindcss = {
@@ -62,16 +57,12 @@ return {
 
         local ensure_installed = vim.tbl_keys(servers or {})
         vim.list_extend(ensure_installed, {
-            "clang-format",
+            "eslint",
             "gofumpt",
             "goimports-reviser",
-            "hadolint",
             "jsonlint",
-            "mypy",
             "prettier",
-            "ruff",
             "stylua",
-            "vale",
         })
         require("mason-tool-installer").setup { ensure_installed = ensure_installed }
 
@@ -145,10 +136,10 @@ return {
                 -- word under your cursor when your cursor rests there for a little while.
                 local client = vim.lsp.get_client_by_id(event.data.client_id)
                 if client and client.server_capabilities.documentHighlightProvider then
-                    vim.api.nvim_create_autocmd({ "CursorHold", "CursorHoldI" }, {
+                    vim.api.nvim_create_autocmd({
                         buffer = event.buf,
                         callback = vim.lsp.buf.document_highlight,
-                    })
+                    }, { "CursorHold", "CursorHoldI" })
 
                     vim.api.nvim_create_autocmd({ "CursorMoved", "CursorMovedI" }, {
                         buffer = event.buf,

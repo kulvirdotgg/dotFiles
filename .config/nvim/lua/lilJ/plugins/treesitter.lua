@@ -5,7 +5,7 @@ return {
         "nvim-treesitter/nvim-treesitter-textobjects",
     },
     opts = {
-        ensure_installed = { "c", "go", "html", "lua", "python", "typescript", "tsx" },
+        ensure_installed = { "go", "lua", "typescript" },
         auto_install = true,
         highlight = {
             enable = true,

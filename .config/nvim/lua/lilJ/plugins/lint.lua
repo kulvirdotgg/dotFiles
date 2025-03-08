@@ -6,10 +6,9 @@ return {
             local lint = require "lint"
 
             lint.linters_by_ft = {
-                python = { "ruff", "mypy" },
-                dockerfile = { "hadolint" },
                 json = { "jsonlint" },
-                markdown = { "vale" },
+                typescript = { "eslint" },
+                typescriptreact = { "eslint" },
             }
 
             -- To allow other plugins to add linters to require('lint').linters_by_ft,
