@@ -6,7 +6,7 @@ format = "$directory$bun$nodejs$golang$python$git_branch$git_status $git_metrics
 palette = "catppuccin_mocha"
 
 [bun]
-format = '[🍞bun](bold green)'
+format = '[🍞bun ](bold green)'
 version_format = '${major}.${minor}'
 
 [character]
