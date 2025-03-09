@@ -2,7 +2,7 @@
 
 # add_newline = true
 # continuation_prompt = '▶▶ '
-format = "$directory$bun$nodejs$golang$python$git_branch$git_status $git_metrics$git_state[❯](bold yellow)[❯](bold purple)[❯](bold blue)\n$character"
+format = "$directory$bun$golang$python$git_branch$git_status$git_state[❯](bold yellow)[❯](bold purple)[❯](bold blue)\n$character"
 palette = "catppuccin_mocha"
 
 [bun]
@@ -46,10 +46,6 @@ staged = '[++\($count\)](green)'
 
 [golang]
 format = '[ ](bold cyan)'
-
-[nodejs]
-detect_files = ['!bun.lock']
-format = '[$symbol]($style)'
 
 [palettes.catppuccin_mocha]
 rosewater = "#f5e0dc"
