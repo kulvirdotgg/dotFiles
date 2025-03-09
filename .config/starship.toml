@@ -2,7 +2,7 @@
 
 # add_newline = true
 # continuation_prompt = '▶▶ '
-format = "$directory$bun$golang$python$git_branch$git_status$git_state[❯](bold yellow)[❯](bold purple)[❯](bold blue)\n$character"
+format = "$directory$bun$golang$python$git_branch$git_status$git_state[ ❯](bold yellow)[❯](bold purple)[❯](bold blue)\n$character"
 palette = "catppuccin_mocha"
 
 [bun]
