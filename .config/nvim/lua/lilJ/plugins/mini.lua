@@ -51,16 +51,16 @@ return {
 
             local diagnostics = {}
             if buffer_diagnostics.errors > 0 then
-                table.insert(diagnostics, string.format(":%d", buffer_diagnostics.errors))
+                table.insert(diagnostics, string.format(" :%d", buffer_diagnostics.errors))
             end
             if buffer_diagnostics.warnings > 0 then
-                table.insert(diagnostics, string.format(":%d", buffer_diagnostics.warnings))
+                table.insert(diagnostics, string.format(" :%d", buffer_diagnostics.warnings))
             end
             if buffer_diagnostics.info > 0 then
-                table.insert(diagnostics, string.format(":%d", buffer_diagnostics.info))
+                table.insert(diagnostics, string.format(" :%d", buffer_diagnostics.info))
             end
             if buffer_diagnostics.hints > 0 then
-                table.insert(diagnostics, string.format(":%d", buffer_diagnostics.hints))
+                table.insert(diagnostics, string.format(" :%d", buffer_diagnostics.hints))
             end
             return table.concat(diagnostics, " ")
         end
