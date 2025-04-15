@@ -49,7 +49,7 @@ return {
             ts_ls = {},
 
             tailwindcss = {
-                filetypes = { "html", "css", "typescript", "typescriptreact" },
+                filetypes = { "html", "css", "typescript", "typescriptreact", "astro" },
             },
         }
 

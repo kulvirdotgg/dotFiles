@@ -7,14 +7,14 @@ return {
         --  - va)  - [V]isually select [A]round [)]paren
         --  - yinq - [Y]ank [I]nside [N]ext [']quote
         --  - ci'  - [C]hange [I]nside [']quote
-        require("mini.ai").setup { n_lines = 500 }
+        -- require("mini.ai").setup { n_lines = 500 }
 
         -- Add/delete/replace surroundings (brackets, quotes, etc.)
         --
         -- - saiw) - [S]urround [A]dd [I]nner [W]ord [)]Paren
         -- - sd'   - [S]urround [D]elete [']quotes
         -- - sr)'  - [S]urround [R]eplace [)] [']
-        require("mini.surround").setup()
+        -- require("mini.surround").setup()
 
         local statusline = require "mini.statusline"
         statusline.setup { use_icons = vim.g.have_nerd_font }
@@ -25,7 +25,6 @@ return {
             local git = statusline.section_git {}
             local diagnostics = statusline.section_diagnostics { trunc_width = 75 }
             local filename = statusline.section_filename { trunc_width = 140 }
-            -- local fileinfo = statusline.section_fileinfo()
             local location = statusline.section_location()
 
             return statusline.combine_groups {
@@ -34,7 +33,6 @@ return {
                 "%<",
                 { hl = "MiniStatuslineFilename", strings = { filename } },
                 "%=",
-                -- { hl = "MiniStatuslineFileinfo", strings = { fileinfo } },
                 { hl = "MiniStatuslineDevinfo", strings = { git } },
                 { hl = mode_hl, strings = { location } },
             }
