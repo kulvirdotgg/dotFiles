@@ -1,4 +1,5 @@
 theme = "catppuccin-mocha"
+# theme = "rose-pine"
 
 font-size = 14
 font-family = "JetbrainsMono Nerd Font"
