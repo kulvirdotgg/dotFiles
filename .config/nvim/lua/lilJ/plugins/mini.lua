@@ -7,8 +7,8 @@ return {
         ---@diagnostic disable-next-line: duplicate-set-field
         statusline.active = function()
             local mode, mode_hl = statusline.section_mode { trunc_width = 120 }
-            local git = statusline.section_git {}
-            local diagnostics = statusline.section_diagnostics { trunc_width = 75 }
+            local git = statusline.section_git()
+            local diagnostics = statusline.section_diagnostics()
             local filename = statusline.section_filename { trunc_width = 140 }
             local location = statusline.section_location()
 
