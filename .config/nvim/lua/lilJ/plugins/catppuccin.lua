@@ -8,9 +8,5 @@ return {
             transparent_background = true,
         }
         vim.cmd.colorscheme "catppuccin"
-
-        vim.diagnostic.config {
-            float = { border = "rounded" },
-        }
     end,
 }
