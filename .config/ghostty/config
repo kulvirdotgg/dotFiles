@@ -1,5 +1,5 @@
 theme = "catppuccin-mocha"
-# theme = "rose-pine"
+cursor-text = 181825
 
 font-size = 14
 font-family = "JetbrainsMono Nerd Font"
