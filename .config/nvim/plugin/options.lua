@@ -44,3 +44,4 @@ vim.o.linebreak = true
 vim.o.wrap = true
 vim.o.breakindent = true
 vim.o.showbreak = "↳ "
+-- vim.o.winborder = "rounded"
