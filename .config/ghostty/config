@@ -13,6 +13,10 @@ background-blur-radius = 8
 
 mouse-hide-while-typing = true
 
+font-feature = -calt
+font-feature = -liga
+font-feature = -dlig
+
 clipboard-read = allow
 clipboard-write = allow
 copy-on-select = clipboard
@@ -35,4 +39,4 @@ macos-option-as-alt = true
 # fullscreen = true
 # macos-non-native-fullscreen = true # fullscreen, hide menubar and dock toooo
 
-keybind = cmd+backspace=text:\x15 
+# keybind = cmd+backspace=text:\x15 

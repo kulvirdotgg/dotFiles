@@ -197,7 +197,6 @@ return {
             "gofumpt",
             "goimports-reviser",
             "jsonlint",
-            "markdownlint",
             "prettier",
             "stylua",
         })
