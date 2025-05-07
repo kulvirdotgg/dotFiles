@@ -185,6 +185,9 @@ return {
                     },
                 },
             },
+
+            pyright = {},
+
             ts_ls = {},
 
             tailwindcss = {
@@ -198,6 +201,8 @@ return {
             "goimports-reviser",
             "jsonlint",
             "prettier",
+            "mypy",
+            "autopep8",
             "stylua",
         })
 

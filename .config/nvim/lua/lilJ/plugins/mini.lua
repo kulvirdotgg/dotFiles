@@ -5,21 +5,40 @@ return {
         local statusline = require "mini.statusline"
         statusline.setup { use_icons = vim.g.have_nerd_font }
 
+        local function get_lsp_clients()
+            local clients = vim.lsp.get_clients()
+
+            if #clients == 0 then
+                return ""
+            end
+
+            local names = {}
+            for _, client in ipairs(clients) do
+                table.insert(names, client.name)
+            end
+
+            local lsp_string = table.concat(names, "|")
+            return " " .. lsp_string
+        end
+
         ---@diagnostic disable-next-line: duplicate-set-field
         statusline.active = function()
             local mode, mode_hl = statusline.section_mode { trunc_width = 120 }
+            local diff = statusline.section_diff { trunc_width = 75 }
             local git = statusline.section_git()
             local diagnostics = statusline.section_diagnostics()
-            local filename = statusline.section_filename { trunc_width = 140 }
+            local fileinfo = MiniStatusline.section_fileinfo { trunc_width = 120 }
             local location = statusline.section_location()
+            local lsp = get_lsp_clients()
 
             return statusline.combine_groups {
                 { hl = mode_hl, strings = { mode } },
-                { hl = "MiniStatuslineDevinfo", strings = { diagnostics } },
+                { hl = "MiniStatuslineDevinfo", strings = { git, diff } },
                 "%<",
-                { hl = "MiniStatuslineFilename", strings = { filename } },
+                { hl = "MiniStatuslineFilename", strings = { fileinfo } },
                 "%=",
-                { hl = "MiniStatuslineDevinfo", strings = { git } },
+                { hl = "MiniStatuslineFilename", strings = { lsp } },
+                { hl = "MiniStatuslineDevinfo", strings = { diagnostics } },
                 { hl = mode_hl, strings = { location } },
             }
         end
