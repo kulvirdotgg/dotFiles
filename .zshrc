@@ -1,6 +1,3 @@
-# ---- homebrew ----
-eval "$(/opt/homebrew/bin/brew shellenv)"
-
 # ---- Aliases ----
 alias ls='lsd'
 alias lg='lazygit'
@@ -20,11 +17,5 @@ eval "$(zoxide init --cmd cd zsh)"
 # ---- fzf ----
 source <(fzf --zsh)
 
-# ---- syntax highlighting ----
-source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
 export EDITOR="nvim"
 export MANPAGER="nvim +Man!"
-
-# bun completions
-[ -s "/Users/lilj/.bun/_bun" ] && source "/Users/lilj/.bun/_bun"
