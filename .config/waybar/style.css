@@ -1,0 +1,116 @@
+@import "mocha.css";
+
+* {
+  font-family: "JetBrainsMono Nerd Font";
+  font-weight: bold;
+  font-size: 12px;
+}
+
+window#waybar {
+  color: @fg;
+  background-color: @bg2;
+  border-radius: 6px;
+}
+
+/* ------ Custom Modules ------ */
+#custom-icon {
+  font-size: 18px;
+  color: @blue;
+  padding: 0 10px;
+}
+
+/* Workspaces */
+#workspaces {
+  padding: 0px 3px;
+  margin: 5px;
+  font-family: JetBrainsMono Nerd Font;
+}
+
+#workspaces button {
+  padding: 0px 2px;
+  color: @peach;
+  background-color: transparent;
+  font-family: JetBrainsMono Nerd Font;
+}
+
+#workspaces button.active {
+  color: @fg;
+}
+
+#workspaces button.urgent {
+  color: @red;
+}
+
+/* ------ Window Title ------ */
+#window {
+  padding: 2px 8px;
+  color: @fg;
+}
+
+/* ------ Clock ------ */
+#clock {
+  padding: 2px 12px;
+  margin: 5px;
+  color: @lavender;
+  background-color: @bg;
+  border-radius: 8px;
+}
+
+/* ------ Tray ------ */
+#tray {
+  padding: 2px 12px;
+  margin: 5px;
+  background-color: @bg;
+  border-radius: 0px;
+}
+
+/* ------ Network ------ */
+#network {
+  padding: 2px 8px;
+  margin: 4px 2px;
+  color: @text;
+  background-color: @bg;
+}
+
+#pulseaudio {
+  padding: 2px 8px;
+  margin: 5px;
+  color: @yellow;
+  background-color: @bg;
+}
+
+#pulseaudio.muted {
+  color: @red;
+}
+
+#memory {
+  padding: 2px 8px;
+  margin: 5px;
+  color: @red;
+  background-color: @bg;
+  border-radius: 0px;
+}
+
+/* ------ Battery ------ */
+#battery {
+  padding: 2px 8px;
+  margin: 5px;
+  color: @green;
+  background-color: @bg;
+}
+
+/* #custom-power { */
+/*   color: @red; */
+/*   background-color: @surface1; */
+/*   padding: 2px 9px; */
+/*   margin: 4px 2px; */
+/*   font-size: 15px; */
+/* } */
+
+tooltip {
+  border: 1px solid @blue;
+  background: @bg2;
+  margin: 20px;
+  padding: 15px;
+  border-radius: 14px;
+}
