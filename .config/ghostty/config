@@ -1,7 +1,7 @@
 theme = "catppuccin-mocha"
 cursor-text = 181825
 
-font-size = 14
+font-size = 12
 font-family = "JetbrainsMono Nerd Font"
 font-thicken = true
 
