@@ -6,7 +6,6 @@ return {
 
         lint.linters_by_ft = {
             json = { "jsonlint" },
-            python = { "mypy" },
             -- typescript = { "eslint" },
             -- typescriptreact = { "eslint" },
         }

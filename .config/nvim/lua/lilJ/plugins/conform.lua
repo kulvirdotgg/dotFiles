@@ -25,7 +25,6 @@ return {
             go = { "gofumpt", "goimports_reviser" },
             html = { "prettier" },
             lua = { "stylua" },
-            python = { "autopep8" },
             typescript = { "prettier" },
             typescriptreact = { "prettier" },
         },

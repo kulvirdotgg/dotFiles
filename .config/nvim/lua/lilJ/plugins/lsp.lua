@@ -186,7 +186,7 @@ return {
                 },
             },
 
-            pyright = {},
+            pylsp = {},
 
             ts_ls = {},
 
@@ -201,8 +201,6 @@ return {
             "goimports-reviser",
             "jsonlint",
             "prettier",
-            "mypy",
-            "autopep8",
             "stylua",
         })
 
