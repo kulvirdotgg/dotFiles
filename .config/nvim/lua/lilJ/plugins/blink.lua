@@ -19,10 +19,9 @@ return {
         },
 
         completion = {
-            documentation = { auto_show = true, auto_show_delay_ms = 500, window = { border = "rounded" } },
+            documentation = { auto_show = true, auto_show_delay_ms = 500 },
 
             menu = {
-                border = "rounded",
                 draw = {
                     columns = {
                         { "kind_icon", "label", "label_description", gap = 1 },
@@ -45,7 +44,7 @@ return {
         fuzzy = { implementation = "prefer_rust_with_warning" },
 
         -- Shows a signature help window while you type arguments for a function
-        signature = { enabled = true, window = { border = "rounded" } },
+        signature = { enabled = true },
     },
     opts_extend = { "sources.default" },
 }

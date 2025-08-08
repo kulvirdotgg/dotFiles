@@ -30,7 +30,7 @@ return {
                 -- Opens a popup that displays documentation about the word under your cursor
                 --  See `:help K` for why this keymap.
                 map("K", function()
-                    vim.lsp.buf.hover { border = "rounded" }
+                    vim.lsp.buf.hover {}
                 end, "Hover Documentation")
 
                 -- Jump to the definition of the word under your cursor.
@@ -121,7 +121,7 @@ return {
         -- See :help vim.diagnostic.Opts
         vim.diagnostic.config {
             severity_sort = true,
-            float = { border = "rounded", source = "if_many" },
+            float = { source = "if_many" },
             underline = { severity = vim.diagnostic.severity.ERROR },
             signs = vim.g.have_nerd_font and {
                 text = {
