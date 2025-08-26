@@ -1,21 +1,8 @@
--- Telescope is a fuzzy finder that comes with a lot of different things that
--- it can fuzzy find! It's more than just a "file finder", it can search
--- many different aspects of Neovim, your workspace, LSP, and more!
---
--- Two important keymaps to use while in Telescope are:
---  - Insert mode: <c-/>
---  - Normal mode: ?
---
--- This opens a window that shows you all of the keymaps for the current
--- Telescope picker. This is really useful to discover what Telescope can
--- do as well as how to actually do it!
-
 require("telescope").setup {
     defaults = {
         file_ignore_patterns = { ".git/", "node%_modules/.*" },
         prompt_prefix = "🔭 ",
         selection_caret = " ",
-        -- initial_mode = "normal",
     },
 
     extensions = {
@@ -27,7 +14,6 @@ require("telescope").setup {
     },
 }
 
--- Enable Telescope extensions if they are installed
 pcall(require("telescope").load_extension, "fzf")
 pcall(require("telescope").load_extension, "ui-select")
 
@@ -46,7 +32,6 @@ vim.keymap.set("n", "<leader>sr", builtin.resume, { desc = "[S]earch [R]esume" }
 vim.keymap.set("n", "<leader>s.", builtin.oldfiles, { desc = '[S]earch Recent Files ("." for repeat)' })
 vim.keymap.set("n", "<leader><leader>", builtin.buffers, { desc = "[ ] Find existing buffers" })
 
--- Slightly advanced example of overriding default behavior and theme
 vim.keymap.set("n", "<leader>/", function()
     builtin.current_buffer_fuzzy_find(require("telescope.themes").get_dropdown {
         winblend = 10,
