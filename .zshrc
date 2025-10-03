@@ -5,6 +5,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 alias ls='lsd'
 alias lg='lazygit'
 alias nv='nvim'
+alias vim='nvim'
 alias neofetch="fastfetch"
 alias python='python3'
 
