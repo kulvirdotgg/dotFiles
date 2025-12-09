@@ -26,6 +26,3 @@ source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 export EDITOR="nvim"
 export MANPAGER="nvim +Man!"
-
-# bun completions
-[ -s "/Users/lilj/.bun/_bun" ] && source "/Users/lilj/.bun/_bun"
