@@ -21,17 +21,15 @@ return {
         end,
 
         formatters_by_ft = {
-            css = { "prettier" },
             go = { "gofumpt", "goimports_reviser" },
-            html = { "prettier" },
             lua = { "stylua" },
             python = {
                 "ruff_fix",
                 "ruff_format",
                 "ruff_organize_imports",
             },
-            typescript = { "prettier" },
-            typescriptreact = { "prettier" },
+            typescript = { "biome" },
+            typescriptreact = { "biome" },
         },
     },
 }
