@@ -1,6 +1,7 @@
 return {
     "nvim-treesitter/nvim-treesitter",
     build = ":TSUpdate",
+    branch = "master",
     dependencies = {
         "nvim-treesitter/nvim-treesitter-textobjects",
     },
@@ -9,9 +10,8 @@ return {
         auto_install = true,
         highlight = {
             enable = true,
-            additional_vim_regex_highlighting = { "ruby" },
         },
-        indent = { enable = true, disable = { "ruby" } },
+        indent = { enable = true },
     },
     config = function(_, opts)
         ---@diagnostic disable-next-line: missing-fields
