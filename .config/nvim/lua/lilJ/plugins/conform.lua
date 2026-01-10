@@ -28,8 +28,10 @@ return {
                 "ruff_format",
                 "ruff_organize_imports",
             },
-            typescript = { "biome" },
-            typescriptreact = { "biome" },
+            -- typescript = { "biome" },
+            -- typescriptreact = { "biome" },
+            typescript = { "prettier" },
+            typescriptreact = { "prettier" },
         },
     },
 }

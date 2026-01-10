@@ -15,19 +15,16 @@ error_symbol = "[✗](bold maroon)"
 disabled = true
 
 [directory]
-home_symbol= "󰊠 "
+home_symbol = "󰊠 "
 truncation_length = 2
 truncate_to_repo = true
 truncation_symbol = "󰊠 "
 style = "bold lavender"
 
 [git_branch]
-format='[ $symbol$branch]($style)'
-style='bold mauve'
-symbol=" "
-
-[git_state]
-cherry_pick = '[🍒](bold maroon)'
+format ='[ $symbol$branch]($style)'
+style ='bold mauve'
+symbol =" "
 
 [git_status]
 format = '([\[$all_status$ahead_behind\]]($style))'
@@ -46,6 +43,9 @@ stashed = '襁'
 [golang]
 format = '[ ${version}](bold $style)'
 version_format = 'v${major}.${minor}'
+
+[nix_shell]
+symbol = " "
 
 [palettes.catppuccin_mocha]
 rosewater = "#f5e0dc"

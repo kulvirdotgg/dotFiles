@@ -18,7 +18,6 @@ _darcs
 .+~          # emacs backup files
 \#.*\#       # emacs autosave files
 
-^/README.*
 ^/readme.*
 ^/LICENSE.*
 ^/COPYING
@@ -26,13 +25,3 @@ _darcs
 # extra stuff not part of configs
 install.sh
 assets
-
-# NOTE:
-# do not symlink configs for packages currently not in use
-# comment stuff from here if using in future maybe
-.clang-format
-.bash_profile
-^/alacritty*
-^/skhd*
-^/sketchybar*
-^/yabai*

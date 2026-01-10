@@ -1,11 +1,33 @@
 [credential]
-  helper = cache
-[user]
-  name = Kulvir Singh
-  email = kulvirs734@gmail.com
+    helper = cache
+
+[branch]
+    sort = "-committerdate"
+
+; [commit]
+; 	gpgSign = true
+
+; [gpg]
+;     format = "ssh"
+
 [init]
-  defaultBranch = trunk
+    defaultBranch = trunk
+
 [lfs]
-  enable = true
+    enable = true
+
+[pull]
+	rebase = true
+
 [push]
-  autoSetupRemote = true
+    autoSetupRemote = true
+
+[rebase]
+	updateRefs = true
+
+; [tag]
+; 	gpgSign = true
+
+[user]
+    name = Kulvir Singh
+    email = kulvirs734@gmail.com
