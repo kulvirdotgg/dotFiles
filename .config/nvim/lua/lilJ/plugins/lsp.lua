@@ -158,7 +158,7 @@ return {
                 },
             },
 
-            ts_ls = {},
+            tsgo = {},
 
             tailwindcss = {
                 filetypes = { "html", "css", "typescript", "typescriptreact", "astro" },

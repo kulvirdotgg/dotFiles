@@ -29,6 +29,9 @@ window-padding-x = 2
 window-padding-y = 2
 window-padding-balance = true
 
+shell-integration = zsh
+shell-integration-features = title, cursor, sudo
+
 # Don't use if using fullscreen
 window-width = 168
 window-height = 47
