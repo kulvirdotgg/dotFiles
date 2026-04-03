@@ -1,3 +1,5 @@
+---@module 'lazy'
+---@type LazySpec
 return {
     "catppuccin/nvim",
     name = "catpuccin",
@@ -14,3 +16,4 @@ return {
         vim.cmd.colorscheme "catppuccin"
     end,
 }
+-- vim: ts=2 sts=2 sw=2 et

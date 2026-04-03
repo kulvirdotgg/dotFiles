@@ -1,7 +1,8 @@
+---@module 'lazy'
+---@type LazySpec
 return {
     "nvim-telescope/telescope.nvim",
     event = "VimEnter",
-    branch = "0.1.x",
     dependencies = {
         "nvim-lua/plenary.nvim",
         {
@@ -22,3 +23,4 @@ return {
         require "lilJ.telescope"
     end,
 }
+-- vim: ts=2 sts=2 sw=2 et

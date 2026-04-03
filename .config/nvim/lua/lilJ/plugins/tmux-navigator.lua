@@ -1,3 +1,5 @@
+---@module 'lazy'
+---@type LazySpec
 return {
     "alexghergh/nvim-tmux-navigation",
     config = function()
@@ -14,3 +16,4 @@ return {
         vim.keymap.set("n", "<C-//>", nvim_tmux_nav.NvimTmuxNavigateNext)
     end,
 }
+-- vim: ts=2 sts=2 sw=2 et

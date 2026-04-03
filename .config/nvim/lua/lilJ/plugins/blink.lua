@@ -1,7 +1,8 @@
+---@module 'lazy'
+---@type LazySpec
 return {
     "saghen/blink.cmp",
-    event = "InsertEnter",
-
+    event = "VimEnter",
     version = "1.*",
     dependencies = {
         "folke/lazydev.nvim",
@@ -31,7 +32,7 @@ return {
         },
 
         sources = {
-            default = { "lsp", "path", "lazydev", "snippets", "buffer" },
+            default = { "lsp", "path", "lazydev", "snippets" },
             providers = {
                 lazydev = { module = "lazydev.integrations.blink", score_offset = 100 },
             },
@@ -43,3 +44,4 @@ return {
     },
     opts_extend = { "sources.default" },
 }
+-- vim: ts=2 sts=2 sw=2 et

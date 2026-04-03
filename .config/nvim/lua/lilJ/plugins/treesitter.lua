@@ -1,20 +1,55 @@
+---@module 'lazy'
+---@type LazySpec
 return {
-    "nvim-treesitter/nvim-treesitter",
-    build = ":TSUpdate",
-    branch = "master",
-    dependencies = {
-        "nvim-treesitter/nvim-treesitter-textobjects",
+    {
+        "nvim-treesitter/nvim-treesitter",
+        lazy = false,
+        build = ":TSUpdate",
+        branch = "main",
+        -- [[ Configure Treesitter ]] `:help nvim-treesitter-intro`
+        config = function()
+            -- ensure basic parser are installed
+            local parsers = {
+                "diff",
+                "go",
+                "lua",
+                "luadoc",
+                "markdown",
+                "markdown_inline",
+                "typescript",
+            }
+            require("nvim-treesitter").install(parsers)
+
+            ---@param buf integer
+            ---@param language string
+            local function treesitter_try_attach(buf, language)
+                if not vim.treesitter.language.add(language) then return end
+                vim.treesitter.start(buf, language)
+
+                -- enables treesitter based indentation
+                vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
+            end
+
+            local available_parsers = require("nvim-treesitter").get_available()
+            vim.api.nvim_create_autocmd("FileType", {
+                callback = function(args)
+                    local buf, filetype = args.buf, args.match
+
+                    local language = vim.treesitter.language.get_lang(filetype)
+                    if not language then return end
+
+                    local installed_parsers = require("nvim-treesitter").get_installed "parsers"
+
+                    if vim.tbl_contains(installed_parsers, language) then
+                        treesitter_try_attach(buf, language)
+                    elseif vim.tbl_contains(available_parsers, language) then
+                        require("nvim-treesitter").install(language):await(function() treesitter_try_attach(buf, language) end)
+                    else
+                        treesitter_try_attach(buf, language)
+                    end
+                end,
+            })
+        end,
     },
-    opts = {
-        ensure_installed = { "go", "lua", "typescript" },
-        auto_install = true,
-        highlight = {
-            enable = true,
-        },
-        indent = { enable = true },
-    },
-    config = function(_, opts)
-        ---@diagnostic disable-next-line: missing-fields
-        require("nvim-treesitter.configs").setup(opts)
-    end,
 }
+-- vim: ts=2 sts=2 sw=2 et

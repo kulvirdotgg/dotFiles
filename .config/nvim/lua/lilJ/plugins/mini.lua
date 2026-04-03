@@ -1,3 +1,5 @@
+---@module 'lazy'
+---@type LazySpec
 return {
     "echasnovski/mini.nvim",
 
@@ -8,9 +10,7 @@ return {
         local function get_lsp_clients()
             local clients = vim.lsp.get_clients()
 
-            if #clients == 0 then
-                return ""
-            end
+            if #clients == 0 then return "" end
 
             local names = {}
             for _, client in ipairs(clients) do
@@ -53,27 +53,17 @@ return {
             }
 
             local diagnostics = {}
-            if buffer_diagnostics.errors > 0 then
-                table.insert(diagnostics, string.format(" :%d", buffer_diagnostics.errors))
-            end
-            if buffer_diagnostics.warnings > 0 then
-                table.insert(diagnostics, string.format(" :%d", buffer_diagnostics.warnings))
-            end
-            if buffer_diagnostics.info > 0 then
-                table.insert(diagnostics, string.format(" :%d", buffer_diagnostics.info))
-            end
-            if buffer_diagnostics.hints > 0 then
-                table.insert(diagnostics, string.format(" :%d", buffer_diagnostics.hints))
-            end
+            if buffer_diagnostics.errors > 0 then table.insert(diagnostics, string.format(" :%d", buffer_diagnostics.errors)) end
+            if buffer_diagnostics.warnings > 0 then table.insert(diagnostics, string.format(" :%d", buffer_diagnostics.warnings)) end
+            if buffer_diagnostics.info > 0 then table.insert(diagnostics, string.format(" :%d", buffer_diagnostics.info)) end
+            if buffer_diagnostics.hints > 0 then table.insert(diagnostics, string.format(" :%d", buffer_diagnostics.hints)) end
             return table.concat(diagnostics, " ")
         end
 
         ---@diagnostic disable-next-line: duplicate-set-field
         statusline.section_fileinfo = function()
             local fname = vim.fn.expand "%:t"
-            if fname == "" then
-                fname = "[No Name]"
-            end
+            if fname == "" then fname = "[No Name]" end
             local readonly = vim.bo.readonly and "🔒" or ""
             local modified = vim.bo.modified and "[+]" or ""
             return string.format(" %s%s%s ", fname, readonly, modified)
@@ -82,15 +72,12 @@ return {
         ---@diagnostic disable-next-line: duplicate-set-field
         statusline.section_git = function()
             local head = vim.b.gitsigns_head
-            if not head or head == "" then
-                return ""
-            end
+            if not head or head == "" then return "" end
             return string.format(" %s", head)
         end
 
         ---@diagnostic disable-next-line: duplicate-set-field
-        statusline.section_location = function()
-            return "%2l:%-2v"
-        end
+        statusline.section_location = function() return "%2l:%-2v" end
     end,
 }
+-- vim: ts=2 sts=2 sw=2 et

@@ -1,10 +1,7 @@
 local set = vim.keymap.set
 
 -- Prevent continue comment on new line
-vim.api.nvim_create_autocmd(
-    "FileType",
-    { pattern = "*", command = [[setlocal formatoptions-=c formatoptions-=r formatoptions-=o]] }
-)
+vim.api.nvim_create_autocmd("FileType", { pattern = "*", command = [[setlocal formatoptions-=c formatoptions-=r formatoptions-=o]] })
 vim.opt.wildignore = "*/.git/*,*/.DS_Store/*,*/target/*,*/node_modules/*"
 vim.opt.expandtab = true
 
@@ -34,13 +31,9 @@ vim.opt.hlsearch = true
 set("n", "<Esc>", "<cmd>nohlsearch<CR>")
 
 -- Diagnostic keymaps
-set("n", "[d", function()
-    vim.diagnostic.jump { count = -1, float = true }
-end, { desc = "Go to previous [D]iagnostic message" })
+set("n", "[d", function() vim.diagnostic.jump { count = -1, float = true } end, { desc = "Go to previous [D]iagnostic message" })
 
-set("n", "]d", function()
-    vim.diagnostic.jump { count = 1, float = true }
-end, { desc = "Go to next [D]iagnostic message" })
+set("n", "]d", function() vim.diagnostic.jump { count = 1, float = true } end, { desc = "Go to next [D]iagnostic message" })
 
 set("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Open diagnostic [Q]uickfix list" })
 set("n", "<leader>e", vim.diagnostic.open_float, { desc = "Show diagnostic [E]rror messages" })
@@ -55,7 +48,6 @@ set("n", "<down>", '<cmd>echo "Use j to move!!"<CR>')
 vim.api.nvim_create_autocmd("TextYankPost", {
     desc = "Highlight when yanking (copying) text",
     group = vim.api.nvim_create_augroup("highlight-yank", { clear = true }),
-    callback = function()
-        vim.hl.on_yank()
-    end,
+    callback = function() vim.hl.on_yank() end,
 })
+-- vim: ts=2 sts=2 sw=2 et

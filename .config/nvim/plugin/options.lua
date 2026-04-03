@@ -45,3 +45,4 @@ vim.o.wrap = true
 vim.o.breakindent = true
 vim.o.showbreak = "↳ "
 vim.o.winborder = "rounded"
+-- vim: ts=2 sts=2 sw=2 et

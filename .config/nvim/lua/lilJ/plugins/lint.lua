@@ -1,3 +1,5 @@
+---@module 'lazy'
+---@type LazySpec
 return {
     "mfussenegger/nvim-lint",
     event = { "BufReadPre", "BufNewFile" },
@@ -13,8 +15,9 @@ return {
         vim.api.nvim_create_autocmd({ "BufEnter", "BufWritePost", "InsertLeave" }, {
             group = lint_augroup,
             callback = function()
-                require("lint").try_lint()
+                if vim.bo.modifiable then lint.try_lint() end
             end,
         })
     end,
 }
+-- vim: ts=2 sts=2 sw=2 et
